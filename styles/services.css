@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: rgba(14, 126, 197, 1);
+    --secondary-color: rgba(0, 255, 109, 1);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    /* width: 100%;
+    height: 100%; */
+    background-color: rgba(0, 0, 0, 0.01);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #0353FC, #0094FE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    /* width: 98vw;
+    height: 97vh; */
+    width: 97%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+    font-weight: 400;
+    background-color: white;
+
+    box-shadow: -1px 0 10px 1px rgba(0, 0, 0, 0.4),
+                1px 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 75%;
+    width: 77%;
+    width: 85%;
+    max-height: 85%;
+}
+
+
+.container-reverse {
+    flex-direction: row-reverse;
+}
+
+.section-one {
+    
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    min-width: 35%;
+    height: 80%;
+
+}
+
+
+
+.section-two {
+    max-width: 50%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.insurance_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-self: center; */
+    /* border: 5px solid orangered; */
+}
+
+.slide_btn {
+    width: 100%;
+    height: 20%;
+    transition: all 0.32s;
+}
+
+.slide_btn:hover {
+    transform: translateX(-40px);
+    transition: all 0.32s;
+}
+
+.insurance_btn {
+    z-index: 1;
+    max-width: 310px;
+    height: 87%;
+    background-color: white;
+    border: 1px solid rgb(214, 205, 205);
+    margin-top: 15px;
+    box-shadow: 2px 4px 7px  rgba(129, 129, 129, 0.749);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+    position: relative;
+
+    border-radius: 15px;
+    /* opacity: 0; */
+}
+
+.insurance_btn:hover {
+    transform: translateX(-40px);
+    box-shadow: 4px 8px 7px  rgba(129, 129, 129, 0.749);
+    border: 2px solid rgba(13, 120, 197, 1);
+}
+
+.insurance_btn > img {
+    margin-left: 10%;
+    width: 20%;
+    max-height: 90%;
+    /* position: absolute;
+    left: 25px; */
+    transition: all .85s;
+}
+
+.insurance_btn > h3 {
+    font-size: 1.5vw;
+    color: var(--primary-color);
+    position: absolute;
+    left: 35%;
+}
+
+.btn_1 {
+    animation: enter_page 3s 0s 1 normal ease both, btn_breathe 10s 7.55s infinite normal ease-in-out;
+
+}.btn_2 {
+    animation: enter_page 3s 0.25s normal ease both, btn_breathe 10s 7.85s infinite normal ease-in-out;
+
+    left: 35px;
+
+}.btn_3 {
+    animation: enter_page 3s 0.5s normal ease both, btn_breathe 10s 8.15s infinite normal ease-in-out;
+
+    left: 70px;
+
+}.btn_4 {
+    animation: enter_page 3s 0.75s normal ease both, btn_breathe 10s 8.45s infinite normal ease-in-out;
+
+    left: 105px;
+}
+
+.section-image {
+    align-self: center;
+    z-index: 2;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.section-home {
+    position: relative;
+}
+
+.family-image {
+    max-width: 85%;
+    animation: family_startup 2s ease 1, family_continuous 10s 2s ease infinite alternate;
+}
+
+/* ---------------- Home ------------------ */
+
+.home-image {
+    position: relative;
+    z-index: 0;
+    justify-self: center;    
+    max-width: 450px;
+    width: 85%;
+
+    /* animation: home_anim 3.5s paused; */
+
+    animation-name: home_anim;
+    animation-duration: 3.5s;
+    animation-play-state: paused;
+}
+
+.section-home > img {
+    min-width: 100px;
+}
+
+/* --------------- Car ----------------- */
+
+.car-image {
+    z-index: 1;
+    position: absolute;
+    bottom: 2%;
+    left: 34%;
+    width: 72%;
+    max-width: 350px;
+
+    transition: transform 1s ease-out;
+    animation: car_anim 3.5s ease-out;
+}
+
+.car-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in;
+}
+
+.get-quote {
+    width: 180px;
+    height: 45px;
+    margin-top: 40px;
+    border: 1px solid grey;
+    background-image: linear-gradient(to right, #017DFE 50%, #013F7F);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2em;
+    color: white;
+
+    font-weight: 550;
+    
+    transition: transform 0.25s;
+}
+
+
+/* --------------- Trees * ------------------ */
+
+.tree {
+    z-index: 0;
+    position: absolute;
+    width: 30%;
+    top: 28%;
+}
+
+.tree-one {
+    left: -8%;
+    animation: tree_anim 2.5s ease-out;
+}
+
+.tree-two {
+    right: -8%;
+    animation: tree_anim 3.5s ease-out;
+}
+
+
+h2 {
+    font-size: 3.5vw;
+    background-image: linear-gradient(to bottom right, #017DFE 50%, #013F7F);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 30px;
+}
+
+/* -------------------- Section 3 - Rectangles ---------------------- */
+
+.section-health {
+    position: relative;
+}
+
+.health-image {
+    z-index: 1;
+    width: 100%;
+    animation: health_img_move 2s ease-out, health_img_anim 15s 2s ease-in-out infinite alternate;
+}
+
+.rect_sec_3 {
+    z-index: 0;
+    width: 58%;
+    height: 135%; 
+    border: 1px solid grey;
+}
+
+.blue_rect_sec_3 {
+    background-image: linear-gradient(to bottom, #017DFE, #013F7F);
+    position: absolute;
+    top: -20%;
+    right: 12%;
+
+    animation: blue_rect_move 2s ease-out, blue_rect_anim 10s 2s ease-out infinite alternate;
+}
+
+.transparent_rect_sec_3 {
+    position: absolute;
+    top: -8%;
+    right: 18%;
+
+    filter: blur(10);
+    background-color: #8B8B8B;
+    opacity: 60%;
+
+    animation: transparent_rect_move 3s, transparent_rect_anim 10s 3s ease-out infinite alternate;
+}
+
+/* ------------------------------- All Animations ------------------------- */
+
+@keyframes family_startup {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes family_continuous {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg) scale(1);
+    }
+    75%
+    {
+        transform: rotate(-2deg) scale(1.03);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes enter_page {
+    from {
+        transform: translate(400px);
+        opacity: 0;
+
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes btn_breathe {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(25px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes x_rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes x_periodic_rotate {
+    0% {
+        transform: rotate(0);
+    }
+    80% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes car_anim {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes tree_anim {
+    0% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes home_anim {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes blue_rect_move {
+    from {
+        transform: translateX(700px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes blue_rect_anim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+
+@keyframes transparent_rect_move {
+    from {
+        transform: translateY(700px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes transparent_rect_anim {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+
+@keyframes health_img_move {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes health_img_anim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.9);
+    }
+}
+/* ---------------------------- Media Queries ---------------------------- */
+
+@media screen and (max-width: 960px) {
+
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+
+        width: 100%;
+        min-height: 80%;
+    }
+
+    .section-one {
+        margin-top: 3%;
+        align-items: center;
+        position: relative; 
+        top: -1%;
+        width: 50%;
+        min-height: 350px;
+        min-width: 90%;
+    }
+
+    .section-main {
+        max-width: 310px;
+        min-width: 225px;
+    }
+
+    .section-two {
+        flex-grow: 0;
+        max-height: 60%;
+        width: 80%;
+    }
+
+    .section-image {
+        max-height: 100%;
+        min-height: 130px;
+        min-width: 125px;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    br {
+        display: none;
+    }
+
+    p,
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 2.7vh;
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+
+    .CTA {
+        margin-top: 37px;
+        border-radius: 3px;
+        font-size: 2vw;
+        font-weight: 700;
+        transition: all 0.35s;
+    }
+    
+    .CTA_1 {
+        height: 40%;
+        width: 10px;
+        margin-bottom: 15px;
+    }
+
+    .insurance_btn {
+        animation: none;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    .insurance_btn > h3 {
+        font-size: 15px;
+        color: var(--primary-color);
+        position: absolute;
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .get-quote {
+        font-size: 0.9rem;
+    }
+}
+
+.reveal {
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+.revealed {
+    transition: all 2s ease-out;
+    opacity: 1;
+    animation-play-state: running;
+}

@@ -1,0 +1,196 @@
+
+/* ================================== NEW NAV ================================== */
+
+nav {
+    /* position: absolute;
+    top: 60px;
+    left: 140px; */
+
+    position: absolute;
+    top: 8%;
+    left: 9.1%;
+
+    /* width: 290px; */
+    /* height: 60px; */
+
+    width: 17.5%;
+    height: 8%;
+    background-image: linear-gradient(110deg, rgba(1, 125, 254, 1) 35%, rgba(0, 111, 227, 1) 50%, rgba(0, 104, 212, 1) );
+    /* border-radius: 30px; */
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.logo {
+    width: 60%;
+
+    /* border-radius: 50%;
+    border: -111px solid green;  */
+}
+
+.meet_mauri {
+    /* font-size: 1.4em; */
+    font-size: 1.4vw;
+    font-weight: bold;
+    position: relative;
+    left: -30px;
+
+
+}
+
+.meet_mauri > span {
+    color: rgba(0, 255, 109, 1);
+    
+}
+
+li {
+    margin-left: 20px;
+    list-style: none;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.menu {
+    z-index: 1;
+    position: absolute;
+    top: 8.5%;
+    left: 0%;
+
+    width: 3.5%;
+    height: 7%;
+    background-image: linear-gradient(to bottom right, rgba(1, 125, 254, 1) 35%, rgba(0, 111, 227, 1) 50%, rgba(0, 104, 212, 1) );
+    border-radius: 0 5px 5px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > img {
+    width: 40%;
+    position: relative;
+    left: -4%;
+}
+
+@media screen and (max-width: 1200px) {
+    .meet_mauri{
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    nav {
+        width: 7.5vw;
+        height: 7.5vw;
+
+        top: 5%;
+        left: 10%;
+    }
+
+    li {
+        position: relative;
+    }
+
+    .logo {
+        position: relative;
+        top: 3px;
+        left: -6px;
+        width: 150%;
+        /* min-width: 50px; */
+    }
+
+    .meet_mauri {
+        display: none;
+    }
+
+    .menu {
+        z-index: 1;
+        position: absolute;
+        top: 5.4%;
+        left: 0%;
+    
+        width: 8%;
+        height: 5%;
+        background-image: linear-gradient(to bottom right, rgba(1, 125, 254, 1) 35%, rgba(0, 111, 227, 1) 50%, rgba(0, 104, 212, 1) );
+        border-radius: 0 5px 5px 0;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu > img {
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .meet_mauri{
+        font-size: 1.75vw;
+    }
+
+    .logo {
+        position: relative;
+        top: 3px;
+        left: -7px;
+        min-width: 20px;
+        width: 170%;
+        /* min-width: 50px; */
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    nav {
+        min-width: 50px;
+        min-height: 50px;
+    }
+    .meet_mauri{
+        font-size: 1.75vw;
+    }
+
+    .logo {
+        position: relative;
+        top: 3px;
+        left: -11px;
+        min-width: 20px;
+        width: 170%;
+        /* min-width: 50px; */
+    }
+}
+
+@media screen and (max-height: 600px) {
+    nav {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    .logo {
+        position: relative;
+        top: 3px;
+        min-width: 20px;
+        /* min-width: 50px; */
+    }
+    
+}
+
