@@ -298,6 +298,7 @@ main {
     background-color: var(--white);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 97vw;
     max-height: 85%;
     height: 95vh;
@@ -478,10 +479,11 @@ p {
     main {
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
     }
 
     .main_sec {
-        max-height: 50%;
+        /* max-height: 50%; */
         max-width: 100%;
         /* border: 2px solid green; */
     }

@@ -7,10 +7,10 @@ import "../styles/left_Page_Breathe.css"
 export default function Services () {
   return (
     <>
-
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
+        
         <div className="menu">
             <img src="images/menu.png" />
         </div>
@@ -92,10 +92,10 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-home ">
-                        <img className="home-image reveal" src="images/circular_home.png"/>
-                        <img className="car-image reveal" src="images/mercedes.png"/>
-                        <img className="tree tree-one reveal" src="images/tree.png"/>
-                        <img className="tree tree-two reveal" src="images/tree.png"/>
+                        <img className="home-image" src="images/circular_home.png"/>
+                        <img className="car-image" src="images/mercedes.png"/>
+                        <img className="tree tree-one" src="images/tree.png"/>
+                        <img className="tree tree-two" src="images/tree.png"/>
                     </div>
                 </div>
             </section>
@@ -121,10 +121,10 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-health">
-                        <img className="health-image reveal" src="images/health_main_img.png"/>
+                        <img className="health-image" src="images/health_main_img.png"/>
 
-                        <div className="rect_sec_3 blue_rect_sec_3 reveal"></div>
-                        <div className="rect_sec_3 transparent_rect_sec_3 reveal"></div>
+                        <div className="rect_sec_3 blue_rect_sec_3"></div>
+                        <div className="rect_sec_3 transparent_rect_sec_3"></div>
                     </div>
                 </div>
             </section>
@@ -150,7 +150,7 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-health">
-                        <img className="health-image reveal" src="images/pension.png"/>
+                        <img className="health-image" src="images/pension.png"/>
                     </div>
                 </div>
             </section>
