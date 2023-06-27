@@ -3,9 +3,9 @@ import React from 'react'
 const Service = () => {
   return (
     <div id="section_4" className="wrapper" >
-        <section>
+        {/* <section>
             <div className="container container-reverse">
-                <div className="section-one ">
+                <div className="section-one">
                     <h2>Pension</h2>
 
                     <p>Lorem Ipsum is simply dummy text of the printing
@@ -22,10 +22,10 @@ const Service = () => {
                 </div>
 
                 <div className="section-two section-health">
-                    <img className="health-image reveal" src="images/pension.png"/>
+                    <img className="health-image" src="images/pension.png"/>
                 </div>
             </div>
-        </section>
+        </section> */}
     </div>
   )
 }
