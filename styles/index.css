@@ -486,15 +486,12 @@ p {
     }
 
     .main_sec {
-        /* max-height: 50%; */
-        max-width: 100%;
-        /* border: 2px solid green; */
+        max-height: 50%;
     }
 
     .main_sec_1 {
         margin-top: 7%;
         align-items: center;
-        /* border: 2px solid red; */
     }
 
     body {

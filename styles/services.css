@@ -91,7 +91,17 @@ section {
 
 }
 
+img {
+    height: auto;
+}
 
+.menu img {
+    height: auto;
+}
+
+.circle_grid_horizontal {
+    height: auto;
+}
 
 .section-two {
     max-width: 50%;
@@ -196,6 +206,7 @@ section {
 
 .family-image {
     max-width: 85%;
+    height: auto;
     animation: family_startup 2s ease 1, family_continuous 10s 2s ease infinite alternate;
 }
 
@@ -207,6 +218,7 @@ section {
     justify-self: center;    
     max-width: 450px;
     width: 85%;
+    height: auto;
 
     animation-name: home_anim;
     animation-duration: 3.5s;
@@ -222,6 +234,7 @@ section {
     left: 34%;
     width: 72%;
     max-width: 350px;
+    height: auto;
 
     transition: transform 1s ease-out;
     animation: car_anim 3.5s ease-out;
@@ -260,6 +273,7 @@ section {
     width: 30%;
     /* width: 72%; */
     max-width: 350px;
+    height: auto;
     
     top: 28%;
 }
@@ -276,12 +290,13 @@ section {
 
 
 h2 {
-    font-size: 3.5vw;
+    font-size: 4em;
     background-image: linear-gradient(to bottom right, #017DFE 50%, #013F7F);
     color: transparent;
     -webkit-background-clip: text;
     margin-bottom: 30px;
 }
+
 
 /* -------------------- Section 3 - Rectangles ---------------------- */
 
@@ -490,6 +505,15 @@ h2 {
 
 @media screen and (max-width: 960px) {
 
+    h2 {
+        font-size: 2.5em;
+        background-image: linear-gradient(to bottom right, #017DFE 50%, #013F7F);
+        color: transparent;
+        -webkit-background-clip: text;
+        margin-bottom: 30px;
+    }
+    
+
     .container {
         flex-direction: column-reverse;
         align-items: center;
@@ -518,12 +542,15 @@ h2 {
         flex-grow: 0;
         max-height: 60%;
         max-width: 80%;
+        transform: scale(0.9);
     }
 
     .section-image {
-        max-height: 100%;
+        /* max-height: 100%;
         min-height: 130px;
-        min-width: 125px;
+        min-width: 125px; */
+        height: 100%;
+        width: auto;
     }
 
     body {
@@ -554,7 +581,7 @@ h2 {
     .CTA {
         margin-top: 37px;
         border-radius: 3px;
-        font-size: 2vw;
+        font-size: 1.1em;
         font-weight: 700;
         transition: all 0.35s;
     }
@@ -579,11 +606,20 @@ h2 {
     }
 }
 
+
+@media screen and (max-width: 500px) {
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .get-quote {
         font-size: 0.9rem;
     }
 }
+
 
 .reveal {
     animation-play-state: paused;
