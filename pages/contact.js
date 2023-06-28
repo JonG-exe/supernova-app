@@ -10,9 +10,9 @@ import AestheticVertical from "../public/images/page_asthetic_vertical.png"
 const Contact = () => {
   return (
     <>
-        <div className="menu">
+        {/* <div className="menu">
             <Image alt="" src={Menu} />
-        </div>
+        </div> */}
 
         <div id="page_design">
             <div className="left_page_design">
@@ -21,12 +21,13 @@ const Contact = () => {
                 <div className="box box_3"></div>
                 <div className="transparent_box"></div>
         
-                <Image alt="" className="circle_grid_horizontal" src={AestheticHorizontal}></Image>
-                <Image alt="" className="circle_grid_vertical" src={AestheticVertical}></Image>
+                {/* <Image alt="" className="circle_grid_horizontal" src={AestheticHorizontal}></Image>
+                <Image alt="" className="circle_grid_vertical" src={AestheticVertical}></Image> */}
             </div>
         </div>
 
-        <div className="form">
+        <div className="form-container">
+            <div className="form">
 
             <div className="form_main_area">
 
@@ -53,6 +54,7 @@ const Contact = () => {
                     <button className="send">Send</button>
                     
                 </form>
+
             </div>
 
             <div className="form_contact_info">
@@ -65,7 +67,10 @@ const Contact = () => {
                 </div>
 
             </div>
+            </div>
         </div>
+
+        
     </>
   )
 }

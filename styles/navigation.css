@@ -2,6 +2,7 @@
 /* ================================== NEW NAV ================================== */
 
 nav {
+    z-index: 200;
     /* position: absolute;
     top: 60px;
     left: 140px; */
@@ -108,7 +109,7 @@ a {
         margin-right: 0;
         position: relative;
         top: 3px;
-        /* min-width: 50px; */
+        width: 35px;
     }
 
     .meet_mauri {
@@ -147,10 +148,6 @@ a {
 
 
 @media screen and (max-width: 630px) {
-    nav {
-        min-width: 50px;
-        min-height: 50px;
-    }
     .meet_mauri{
         font-size: 1.75vw;
     }

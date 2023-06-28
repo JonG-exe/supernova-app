@@ -298,9 +298,10 @@ body {
 /* ================================== MAIN ================================== */
 
 main {
+    padding: 100px 20px;
     background-color: var(--white);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 97vw;
     max-height: 85%;
@@ -309,7 +310,8 @@ main {
 }
 
 .main_sec_1 {
-    max-width: 400px;
+    margin-right: 150px;
+    max-width: 430px;
     max-height: 350px;
     align-self: center;
     display: flex;
@@ -323,7 +325,7 @@ main {
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 3em;
     margin-bottom: 30px;
 }
 
@@ -490,7 +492,8 @@ p {
     }
 
     .main_sec_1 {
-        margin-top: 7%;
+        margin-right: 0;
+        margin-top: 13%;
         align-items: center;
     }
 
