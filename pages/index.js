@@ -38,10 +38,10 @@ const Index = () => {
                 <div className="main_sec main_sec_2">
                     <Image alt="" className="Sharon" src={Sharon}/>
 
-                    <LinLink href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </LinLink>
-                    <LinLink href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </LinLink>
-                    <LinLink href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </LinLink>
-                    <LinLink href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </LinLink>
+                    <Link href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </Link>
+                    <Link href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </Link>
+                    <Link href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </Link>
+                    <Link href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </Link>
                 </div> 
                 
             </Stack> */}
@@ -71,10 +71,10 @@ const Index = () => {
             <div className="main_sec main_sec_2">
                 <Image alt="" className="Sharon" src={Sharon}/>
 
-                <LinLink href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </LinLink>
-                <LinLink href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </LinLink>
-                <LinLink href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </LinLink>
-                <LinLink href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </LinLink>
+                <Link href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </Link>
+                <Link href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </Link>
+                <Link href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </Link>
+                <Link href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </Link>
             </div>
         </main>
     
