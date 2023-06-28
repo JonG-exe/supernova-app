@@ -12,7 +12,7 @@ export default function Services () {
         </Head>
         
         <div className="menu">
-            <img src="images/menu.png" />
+            <Image width={150} height={200} src="images/menu.png" />
         </div>
 
         <section id="section_1">
@@ -22,9 +22,9 @@ export default function Services () {
             <div className="box box_3"></div>
             <div className="transparent_box"></div>
 
-            <img className="circle_grid_vertical" src="images/page_asthetic_vertical.png"></img>
-            {/* <img className="circle_grid_horizontal" src="images/horizontal_grid.png"></img> */}
-            <img className="circle_grid_horizontal" src="images/repeat_grid.png"></img>
+            <Image width={150} className="circle_grid_vertical" src="images/page_asthetic_vertical.png"></Image>
+            {/* <Image height={200} className="circle_grid_horizontal" src="images/horizontal_grid.png"></Image> */}
+            <Image width={150} height={200} className="circle_grid_horizontal" src="images/repeat_grid.png"></Image>
 
     
             <div className="container">
@@ -33,28 +33,28 @@ export default function Services () {
 
                         <a href="#section_2" className="slide_btn">
                             <div className="insurance_btn btn_1">
-                                <img className="btn_image" src="images/icons/new_icon-car.png"/>
+                                <Image width={150} height={200} className="btn_image" src="images/icons/new_icon-car.png"/>
                                 <h3>Car Insurance</h3>                
                             </div>
                         </a >
 
                         <a href="#section_3" className="slide_btn">
                             <div className="insurance_btn btn_2">
-                                <img className="btn_image"src="images/icons/new_icon-medical.png"/>
+                                <Image width={150} height={200} className="btn_image"src="images/icons/new_icon-medical.png"/>
                                 <h3>Health</h3>
                             </div>
                         </a >
 
                         <a href="#section_4" className="slide_btn">
                             <div className="insurance_btn btn_3">
-                                <img className="btn_image"src="images/icons/new_icon-home.png"/>
+                                <Image width={150} height={200} className="btn_image"src="images/icons/new_icon-home.png"/>
                                 <h3>Home & Life</h3>
                             </div>
                         </a >
 
                         <a href="#section_4" className="slide_btn">
                             <div className="insurance_btn btn_4">
-                                <img className="btn_image" src="images/icons/new_icon-person.png"/>
+                                <Image width={150} height={200} className="btn_image" src="images/icons/new_icon-person.png"/>
                                 <h3>Pension</h3>
                             </div>
                         </a >
@@ -62,7 +62,7 @@ export default function Services () {
                 </div>
 
                 <div className="section-two ">
-                    <img className="section-image family-image" src="images/family.png"/>
+                    <Image width={150} height={200} className="section-image family-image" src="images/family.png"/>
                 </div>
 
             </div>
@@ -92,10 +92,10 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-home ">
-                        <img className="home-image" src="images/circular_home.png"/>
-                        <img className="car-image" src="images/mercedes.png"/>
-                        <img className="tree tree-one" src="images/tree.png"/>
-                        <img className="tree tree-two" src="images/tree.png"/>
+                        <Image width={150} height={200} className="home-image" src="images/circular_home.png"/>
+                        <Image width={150} height={200} className="car-image" src="images/mercedes.png"/>
+                        <Image width={150} height={200} className="tree tree-one" src="images/tree.png"/>
+                        <Image width={150} height={200} className="tree tree-two" src="images/tree.png"/>
                     </div>
                 </div>
             </section>
@@ -121,7 +121,7 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-health">
-                        <img className="health-image" src="images/health_main_img.png"/>
+                        <Image width={150} height={200} className="health-image" src="images/health_main_Image.png"/>
 
                         <div className="rect_sec_3 blue_rect_sec_3"></div>
                         <div className="rect_sec_3 transparent_rect_sec_3"></div>
@@ -150,7 +150,7 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-health">
-                        <img className="health-image" src="images/pension.png"/>
+                        <Image width={150} height={200} className="health-image" src="images/pension.png"/>
                     </div>
                 </div>
             </section>

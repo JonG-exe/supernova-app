@@ -28,8 +28,8 @@ const Index = () => {
                 </Typography>
 
                 <Stack justifyContent="space-between" direction="space-around">
-                    <Button href="/services" variant="contained">Get In Touch</Button>
-                    <Button href="/services" variant="contained">Services</Button>
+                    <ButtoLink href="/services" variant="contained">Get In Touch</ButtoLink>
+                    <ButtoLink href="/services" variant="contained">Services</ButtoLink>
                 </Stack>
                 
             </Stack>
@@ -38,10 +38,10 @@ const Index = () => {
                 <div className="main_sec main_sec_2">
                     <Image alt="" className="Sharon" src={Sharon}/>
 
-                    <Link href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </Link>
-                    <Link href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </Link>
-                    <Link href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </Link>
-                    <Link href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </Link>
+                    <LinLink href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </LinLink>
+                    <LinLink href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </LinLink>
+                    <LinLink href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </LinLink>
+                    <LinLink href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </LinLink>
                 </div> 
                 
             </Stack> */}
@@ -58,23 +58,23 @@ const Index = () => {
 
                 <div className="mainButtonContainer">
 
-                    <a href="/contact" className="CTA CTA_1">
+                    <Link href="/contact" className="CTA CTA_1">
                         Get In Touch
-                    </a>
+                    </Link>
 
-                    <a href="/services" className="CTA CTA_2">
+                    <Link href="/services" className="CTA CTA_2">
                         Services
-                    </a>
+                    </Link>
                 </div>
             </div>
             
             <div className="main_sec main_sec_2">
-                <img className="Sharon" src="images/Sharon_Gray.png"/>
+                <Image alt="" className="Sharon" src={Sharon}/>
 
-                <a href="/services#section_2"><img className="icon car-icon" src="images/icons/new_icon-car.png"/> </a>
-                <a href="/services#section_2"><img className="icon home-icon" src="images/icons/new_icon-home.png"/> </a>
-                <a href="/services#section_3"><img className="icon medical-icon" src="images/icons/new_icon-medical.png"/> </a>
-                <a href="/services#section_4"><img className="icon person-icon" src="images/icons/new_icon-person.png"/> </a>
+                <LinLink href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </LinLink>
+                <LinLink href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </LinLink>
+                <LinLink href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </LinLink>
+                <LinLink href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </LinLink>
             </div>
         </main>
     
