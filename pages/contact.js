@@ -1,11 +1,12 @@
 import React from 'react'
 import "../styles/contact.css"
+import Image from "next/image"
 
 const Contact = () => {
   return (
     <>
         <div className="menu">
-            <img src="images/menu.png" />
+            <Image alt=""src="images/menu.png" />
         </div>
 
         <div id="page_design">
@@ -15,8 +16,8 @@ const Contact = () => {
                 <div className="box box_3"></div>
                 <div className="transparent_box"></div>
         
-                <img className="circle_grid_vertical" src="images/page_asthetic_vertical.png"></img>
-                <img className="circle_grid_horizontal" src="images/page_asthetic_horizontal.png"></img>
+                <Image alt="" className="circle_grid_horizontal" src="images/page_asthetic_horizontal.png"></Image>
+                <Image alt="" className="circle_grid_vertical" src="images/page_asthetic_vertical.png"></Image>
             </div>
         </div>
 
