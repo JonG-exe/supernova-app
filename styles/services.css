@@ -13,19 +13,12 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
-    /* width: 100%;
-    height: 100%; */
+    width: 100vw;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.01);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background-image: linear-gradient(to bottom right, #0353FC, #0094FE);
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; */
 }
 
 body::-webkit-scrollbar {

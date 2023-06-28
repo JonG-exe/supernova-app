@@ -6,6 +6,7 @@ nav {
     top: 60px;
     left: 140px; */
 
+    padding: 8px 16px;
     position: absolute;
     top: 8%;
     left: 9.1%;
@@ -13,8 +14,7 @@ nav {
     /* width: 290px; */
     /* height: 60px; */
 
-    width: 17.5%;
-    height: 8%;
+    width: max-content;
     background-image: linear-gradient(110deg, rgba(1, 125, 254, 1) 35%, rgba(0, 111, 227, 1) 50%, rgba(0, 104, 212, 1) );
     /* border-radius: 30px; */
     border-radius: 5px;
@@ -33,11 +33,14 @@ nav ul {
     align-items: center;
 }
 
-.logo {
-    width: 60%;
+li {
+    list-style: none;
+}
 
-    /* border-radius: 50%;
-    border: -111px solid green;  */
+.logo {
+    margin-right: 20px;
+    width: 50px;
+    height: auto;
 }
 
 .meet_mauri {
@@ -45,19 +48,12 @@ nav ul {
     font-size: 1.4vw;
     font-weight: bold;
     position: relative;
-    left: -30px;
 
 
 }
 
 .meet_mauri > span {
     color: rgba(0, 255, 109, 1);
-    
-}
-
-li {
-    margin-left: 20px;
-    list-style: none;
     
 }
 
@@ -97,8 +93,8 @@ a {
 
 @media screen and (max-width: 960px) {
     nav {
-        width: 7.5vw;
-        height: 7.5vw;
+        /* width: 7.5vw;
+        height: 7.5vw; */
 
         top: 5%;
         left: 10%;
@@ -109,10 +105,9 @@ a {
     }
 
     .logo {
+        margin-right: 0;
         position: relative;
         top: 3px;
-        left: -6px;
-        width: 150%;
         /* min-width: 50px; */
     }
 
@@ -148,15 +143,6 @@ a {
     .meet_mauri{
         font-size: 1.75vw;
     }
-
-    .logo {
-        position: relative;
-        top: 3px;
-        left: -7px;
-        min-width: 20px;
-        width: 170%;
-        /* min-width: 50px; */
-    }
 }
 
 
@@ -169,14 +155,6 @@ a {
         font-size: 1.75vw;
     }
 
-    .logo {
-        position: relative;
-        top: 3px;
-        left: -11px;
-        min-width: 20px;
-        width: 170%;
-        /* min-width: 50px; */
-    }
 }
 
 @media screen and (max-height: 600px) {

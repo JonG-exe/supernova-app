@@ -4,6 +4,22 @@ import Image from "next/image"
 import "../styles/services.css"
 import "../styles/left_Page_Breathe.css"
 
+// Image Imports
+import Menu from "../public/images/menu.png"
+import AestheticVertical from "../public/images/page_asthetic_vertical.png"
+import RepeatGrid from "../public/images/repeat_grid.png"
+import HorizontalGrid from "../public/images/horizontal_grid.png"
+import CarIcon from "../public/images/icons/new_icon-car.png"
+import MedicalIcon from "../public/images/icons/new_icon-medical.png"
+import HomeIcon from "../public/images/icons/new_icon-home.png"
+import PersonIcon from "../public/images/icons/new_icon-person.png"
+import Family from "../public/images/family.png"
+import CircularHome from "../public/images/circular_home.png"
+import Mercedes from "../public/images/mercedes.png"
+import Tree from "../public/images/tree.png"
+import Pension from "../public/images/pension.png"
+import HealthMain from "../public/images/health_main_img.png"
+
 
 export default function Services () {
   return (
@@ -13,7 +29,7 @@ export default function Services () {
         </Head>
         
         <div className="menu">
-            <Image alt="" width={150} height={200} src="images/menu.png" />
+            <Image alt="" src={Menu} />
         </div>
 
         <section id="section_1">
@@ -23,9 +39,9 @@ export default function Services () {
             <div className="box box_3"></div>
             <div className="transparent_box"></div>
 
-            <Image alt="" width={150} className="circle_grid_vertical" src="images/page_asthetic_vertical.png"></Image>
-            {/* <Image alt="" height={200} className="circle_grid_horizontal" src="images/horizontal_grid.png"></Image> */}
-            <Image alt="" width={150} height={200} className="circle_grid_horizontal" src="images/repeat_grid.png"></Image>
+            <Image alt="" className="circle_grid_vertical" src={AestheticVertical}></Image>
+            {/* <Image alt="" height={200} className="circle_grid_horizontal" src={HorizontalGrid}></Image> */}
+            <Image alt="" className="circle_grid_horizontal" src={RepeatGrid}></Image>
 
     
             <div className="container">
@@ -34,28 +50,28 @@ export default function Services () {
 
                         <a href="#section_2" className="slide_btn">
                             <div className="insurance_btn btn_1">
-                                <Image alt="" width={150} height={200} className="btn_image" src="images/icons/new_icon-car.png"/>
+                                <Image alt="" className="btn_image" src={CarIcon}/>
                                 <h3>Car Insurance</h3>                
                             </div>
                         </a >
 
                         <a href="#section_3" className="slide_btn">
                             <div className="insurance_btn btn_2">
-                                <Image alt="" width={150} height={200} className="btn_image"src="images/icons/new_icon-medical.png"/>
+                                <Image alt="" className="btn_image"src={MedicalIcon}/>
                                 <h3>Health</h3>
                             </div>
                         </a >
 
                         <a href="#section_4" className="slide_btn">
                             <div className="insurance_btn btn_3">
-                                <Image alt="" width={150} height={200} className="btn_image"src="images/icons/new_icon-home.png"/>
+                                <Image alt="" className="btn_image"src={HomeIcon}/>
                                 <h3>Home & Life</h3>
                             </div>
                         </a >
 
                         <a href="#section_4" className="slide_btn">
                             <div className="insurance_btn btn_4">
-                                <Image alt="" width={150} height={200} className="btn_image" src="images/icons/new_icon-person.png"/>
+                                <Image alt="" className="btn_image" src={PersonIcon}/>
                                 <h3>Pension</h3>
                             </div>
                         </a >
@@ -63,7 +79,7 @@ export default function Services () {
                 </div>
 
                 <div className="section-two ">
-                    <Image alt="" width={150} height={200} className="section-image family-image" src="images/family.png"/>
+                    <Image alt="" className="section-image family-image" src={Family}/>
                 </div>
 
             </div>
@@ -93,10 +109,10 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-home ">
-                        <Image alt="" width={150} height={200} className="home-image" src="images/circular_home.png"/>
-                        <Image alt="" width={150} height={200} className="car-image" src="images/mercedes.png"/>
-                        <Image alt="" width={150} height={200} className="tree tree-one" src="images/tree.png"/>
-                        <Image alt="" width={150} height={200} className="tree tree-two" src="images/tree.png"/>
+                        <Image alt="" className="home-image" src={CircularHome}/>
+                        <Image alt="" className="car-image" src={Mercedes}/>
+                        <Image alt="" className="tree tree-one" src={Tree}/>
+                        <Image alt="" className="tree tree-two" src={Tree}/>
                     </div>
                 </div>
             </section>
@@ -122,7 +138,7 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-health">
-                        <Image alt="" width={150} height={200} className="health-image" src="images/health_main_Image.png"/>
+                        <Image alt="" className="health-image" src={HealthMain}/>
 
                         <div className="rect_sec_3 blue_rect_sec_3"></div>
                         <div className="rect_sec_3 transparent_rect_sec_3"></div>
@@ -151,7 +167,7 @@ export default function Services () {
                     </div>
 
                     <div className="section-two section-health">
-                        <Image alt="" width={150} height={200} className="health-image" src="images/pension.png"/>
+                        <Image alt="" className="health-image" src={Pension}/>
                     </div>
                 </div>
             </section>

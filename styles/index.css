@@ -67,7 +67,7 @@ body {
 /* ================================== ICONs ================================== */
 
 .car-icon {
-    width: 130px;
+    /* width: 130px; */
     width: 20%;
     position: absolute;
     right: 2%;
@@ -271,6 +271,13 @@ body {
     bottom: 5%;
 }
 
+.icon {
+    height: auto;
+    transition: all 1.3s;
+    animation-play-state: running;
+}
+
+
 .icon:hover {
     cursor: pointer;
 
@@ -286,10 +293,6 @@ body {
 
 }
 
-.icon {
-    transition: all 1.3s;
-    animation-play-state: running;
-}
 
 
 /* ================================== MAIN ================================== */

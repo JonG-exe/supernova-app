@@ -2,11 +2,16 @@ import React from 'react'
 import "../styles/contact.css"
 import Image from "next/image"
 
+// Image Imports
+import Menu from "../public/images/menu.png"
+import AestheticHorizontal from "../public/images/page_asthetic_horizontal.png"
+import AestheticVertical from "../public/images/page_asthetic_vertical.png"
+
 const Contact = () => {
   return (
     <>
         <div className="menu">
-            <Image alt=""src="images/menu.png" />
+            <Image alt="" src={Menu} />
         </div>
 
         <div id="page_design">
@@ -16,8 +21,8 @@ const Contact = () => {
                 <div className="box box_3"></div>
                 <div className="transparent_box"></div>
         
-                <Image alt="" className="circle_grid_horizontal" src="images/page_asthetic_horizontal.png"></Image>
-                <Image alt="" className="circle_grid_vertical" src="images/page_asthetic_vertical.png"></Image>
+                <Image alt="" className="circle_grid_horizontal" src={AestheticHorizontal}></Image>
+                <Image alt="" className="circle_grid_vertical" src={AestheticVertical}></Image>
             </div>
         </div>
 
