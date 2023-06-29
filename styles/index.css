@@ -320,6 +320,11 @@ main {
     justify-content: center;
 }
 
+@media screen and (max-width: 360px) {
+    .main_sec_1 {
+        max-width: 280px;
+    }
+}
 .main_sec_2 {
     position: relative;
     max-width: 550px;
