@@ -299,7 +299,8 @@ body {
 
 main {
     padding: 100px 20px;
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
