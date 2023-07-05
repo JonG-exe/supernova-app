@@ -117,7 +117,7 @@ export default function Services () {
                     <div className="section-one ">
                         <h2>Health <br/> Insurance</h2>
 
-                        <p>Life coverage designed to shield you from life's mishaps. Be prepared to handle unfortunate setbacks by providing lumpsums if you are not here to take care of family or loved one's needs. Show your loved ones they matter by purchasing whole life, term to 85 years, medical cover and critical illness funds (life threatening diseases). We will be here for you. Up to <b>2 M</b> on medical plans, <b>7M</b> on critical illness.
+                        <p>Life coverage designed to shield you from life&aposs mishaps. Be prepared to handle unfortunate setbacks by providing lumpsums if you are not here to take care of family or loved one&aposs needs. Show your loved ones they matter by purchasing whole life, term to 85 years, medical cover and critical illness funds (life threatening diseases). We will be here for you. Up to <b>2 M</b> on medical plans, <b>7M</b> on critical illness.
                         </p>
         
                         <a className="CTA get-quote" href="#">Read More</a>

@@ -54,7 +54,7 @@ const Index = () => {
                     {/* My goals align with your financial needs.
                     I work with you to curate your most economical
                     life solutions. */}
-                    Giving you the piece of mind you need to secure you through life's unpredictable twists and turns.
+                    Giving you the piece of mind you need to secure you through life&aposs unpredictable twists and turns.
                 </p>
 
                 <div className="mainButtonContainer">
