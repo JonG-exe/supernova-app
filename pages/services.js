@@ -58,7 +58,7 @@ export default function Services () {
                         <a href="#section_3" className="slide_btn">
                             <div className="insurance_btn btn_2">
                                 <Image alt="" className="btn_image"src={MedicalIcon}/>
-                                <h3>Health</h3>
+                                <h3>Life</h3>
                             </div>
                         </a >
 
@@ -94,17 +94,10 @@ export default function Services () {
 
                         <h2>Home & <br/> Car Insurance</h2>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been
-                            the industry&aposs standard dummy text ever since the
-                            1500s. 
-                            <br/><br/>
-                            When an unknown printer took a galley of
-                            type and scrambled it to make a type specimen
-                            book. It has survived not only five centuries. 
+                        <p>Owning your own home is a dream held by most. Live in your dream home by taking advantage of our 20+ years of experience to design the best option for you to make this dream come true.
                         </p>
 
-                        <a className="get-quote" href="#">Get A Quote</a>
+                        <a className="get-quote" href="#">Read More</a>
                 
                     </div>
 
@@ -124,17 +117,10 @@ export default function Services () {
                     <div className="section-one ">
                         <h2>Health <br/> Insurance</h2>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been
-                            the industry&aposs standard dummy text ever since the
-                            1500s. 
-                            <br/><br/>
-                            When an unknown printer took a galley of
-                            type and scrambled it to make a type specimen
-                            book. It has survived not only five centuries. 
+                        <p>Life coverage designed to shield you from life's mishaps. Be prepared to handle unfortunate setbacks by providing lumpsums if you are not here to take care of family or loved one's needs. Show your loved ones they matter by purchasing whole life, term to 85 years, medical cover and critical illness funds (life threatening diseases). We will be here for you. Up to <b>2 M</b> on medical plans, <b>7M</b> on critical illness.
                         </p>
         
-                        <a className="CTA get-quote" href="#">Get A Quote</a>
+                        <a className="CTA get-quote" href="#">Read More</a>
                     </div>
 
                     <div className="section-two section-health">
@@ -153,17 +139,10 @@ export default function Services () {
                     <div className="section-one ">
                         <h2>Pension</h2>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been
-                            the industry&aposs standard dummy text ever since the
-                            1500s. 
-                            <br/><br/>
-                            When an unknown printer took a galley of
-                            type and scrambled it to make a type specimen
-                            book. It has survived not only five centuries. 
+                        <p>Most people retire without guaranteed pension benefits after working their entire lives and find themselves  deafeated by inflation, as the cost of living rises every year - shrining the purchasing power of the dollar.
                         </p>
         
-                        <a className="CTA get-quote" href="#">Get A Quote</a>
+                        <a className="CTA get-quote" href="#">Read More</a>
                     </div>
 
                     <div className="section-two section-health">

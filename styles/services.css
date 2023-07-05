@@ -66,6 +66,10 @@ section {
                 1px 0 10px 1px rgba(0, 0, 0, 0.4);
 }
 
+section p {
+    font-size: 1.3em;
+}
+
 .container {
     display: flex;
     justify-content: space-around;

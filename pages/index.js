@@ -51,19 +51,20 @@ const Index = () => {
                 <h1>Supernova <br /> Financial Solutions</h1>
 
                 <p>
-                    My goals align with your financial needs.
+                    {/* My goals align with your financial needs.
                     I work with you to curate your most economical
-                    life solutions.
+                    life solutions. */}
+                    Giving you the piece of mind you need to secure you through life's unpredictable twists and turns.
                 </p>
 
                 <div className="mainButtonContainer">
 
-                    <Link href="/contact" className="CTA CTA_1">
-                        Get In Touch
+                    <Link href="/services"className="CTA CTA_1">
+                    Services
                     </Link>
 
-                    <Link href="/services" className="CTA CTA_2">
-                        Services
+                    <Link href="/contact" className="CTA CTA_2">
+                        Get In Touch
                     </Link>
                 </div>
             </div>
