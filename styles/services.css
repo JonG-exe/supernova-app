@@ -140,11 +140,13 @@ img {
 }
 
 .insurance_btn {
+    padding: 10px;
     z-index: 1;
     max-width: 310px;
     height: 87%;
     background-color: white;
     border: 1px solid rgb(214, 205, 205);
+    border-radius: 10px;
     margin-top: 15px;
     box-shadow: 2px 4px 7px  rgba(129, 129, 129, 0.749);
     display: flex;
@@ -153,7 +155,6 @@ img {
     /* border: 2px solid blue; */
     position: relative;
 
-    border-radius: 15px;
     /* opacity: 0; */
 }
 

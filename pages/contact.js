@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/contact.css"
 import Image from "next/image"
+import Head from "next/head"
 
 // Image Imports
 import Menu from "../public/images/menu.png"
@@ -10,6 +11,11 @@ import AestheticVertical from "../public/images/page_asthetic_vertical.png"
 const Contact = () => {
   return (
     <>
+
+        <Head>
+            <link rel="icon" href="/favicon.ico" />
+            <title>Contact Us - Supernova Financial</title>
+        </Head>
         {/* <div className="menu">
             <Image alt="" src={Menu} />
         </div> */}

@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack"
 import Box from "@mui/material/Box"
 import Image from "next/image"
 import Link from "next/link"
+import Head from "next/head"
 import "../styles/index.css"
 import Sharon from "../public/images/Sharon_Gray.png"
 import CarIcon from "../public/images/icons/new_icon-car.png"
@@ -15,6 +16,11 @@ import PersonIcon from "../public/images/icons/new_icon-person.png"
 
 const Index = () => {
   return (
+    <>
+        <Head>
+            <link rel="icon" href="/favicon.ico" />
+            <title>Trinidad Financial Solutions - Supernova Financial</title>
+        </Head>
         <main>
             {/* <Stack style={{maxWidth: "300px"}}>
                 <Typography variant='h3'>
@@ -78,7 +84,7 @@ const Index = () => {
                 <Link href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </Link>
             </div>
         </main>
-    
+    </>
   )
 }
 
