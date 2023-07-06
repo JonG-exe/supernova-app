@@ -51,7 +51,7 @@ export default function Services () {
                         <a href="#section_2" className="slide_btn">
                             <div className="insurance_btn btn_1">
                                 <Image alt="" className="btn_image" src={CarIcon}/>
-                                <h3>Car Insurance</h3>                
+                                <h3>Home & Car</h3>                
                             </div>
                         </a >
 
@@ -62,12 +62,12 @@ export default function Services () {
                             </div>
                         </a >
 
-                        <a href="#section_4" className="slide_btn">
+                        {/* <a href="#section_4" className="slide_btn">
                             <div className="insurance_btn btn_3">
                                 <Image alt="" className="btn_image"src={HomeIcon}/>
                                 <h3>Home & Life</h3>
                             </div>
-                        </a >
+                        </a > */}
 
                         <a href="#section_4" className="slide_btn">
                             <div className="insurance_btn btn_4">
@@ -115,9 +115,9 @@ export default function Services () {
             <section>
                 <div className="container">
                     <div className="section-one ">
-                        <h2>Health <br/> Insurance</h2>
+                        <h2>Life Insurance</h2>
 
-                        <p>Life coverage designed to shield you from life&aposs mishaps. Be prepared to handle unfortunate setbacks by providing lumpsums if you are not here to take care of family or loved one&aposs needs. Show your loved ones they matter by purchasing whole life, term to 85 years, medical cover and critical illness funds (life threatening diseases). We will be here for you. Up to <b>2 M</b> on medical plans, <b>7M</b> on critical illness.
+                        <p>Life coverage designed to shield you from life{"'s"} mishaps. Be prepared to handle unfortunate setbacks by providing lumpsums if you are not here to take care of family or loved one{"'s"} needs. Show your loved ones they matter by purchasing whole life, term to 85 years, medical cover and critical illness funds (life threatening diseases). We will be here for you. Up to <b>2 M</b> on medical plans, <b>7M</b> on critical illness.
                         </p>
         
                         <a className="CTA get-quote" href="#">Read More</a>

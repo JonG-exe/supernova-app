@@ -11,7 +11,7 @@ export default function Nav () {
               <Link href="/"><Image alt="" className="logo" src={Logo}/></Link>
             </li>
             <li className="meet_mauri_li">
-              <Link className="meet_mauri" href="/">Meet <span>Mauricia</span></Link>
+              <Link className="meet_mauri" href="/"> <span>Supernova</span> Financial</Link>
             </li>
         </ul>
     </nav>
