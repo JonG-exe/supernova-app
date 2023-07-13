@@ -1,9 +1,8 @@
-import React from 'react'
+import { useState, React } from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import Logo from "../public/images/logo.png" 
-import { Button, AppBar, Toolbar, Box, Stack } from "@mui/material"
-import Menu from "./Menu"
+import { Modal, Typography, Button, AppBar, Toolbar, Box, Stack } from "@mui/material"
 
 // Icons
 import HomeIcon from '@mui/icons-material/Home';
@@ -15,9 +14,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Nav () {
 
-  function toggleMenu() {
-    console.log("toggled")
-  }
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -65,13 +64,32 @@ export default function Nav () {
         </Stack>
 
 
-        <Button sx={{color: "white", display: { xs: "flex", sm: "none" } }} onClick={toggleMenu} >
-          <Stack alignItems="center" justifyContent={"center"} >
+        <Button onClick={handleOpen} sx={{color: "white", display: { xs: "flex", sm: "none" } }}  >
+          <Stack  alignItems="center" justifyContent={"center"} >
             <MenuIcon  sx={{fontSize: "35px", mb: "2px"}}  />
             <span>Menu</span>
           </Stack>
         </Button>
         
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+          sx={{display: "flex", justifyContent:"center", alignItems:"center"}}
+        >
+          <Box sx={{padding: "30px", width: "90vw", height: "90vh", backgroundColor: "white", borderRadius: "20px"}}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              Navigation
+            </Typography>
+
+            <Stack>
+              <Link onClick={handleClose} style={{color: "black"}} href="/">Home</Link>
+              <Link onClick={handleClose} style={{color: "black"}} href="/blogs">Blog</Link>
+              <Link onClick={handleClose} style={{color: "black"}} href="/contact">Contact Us</Link>
+            </Stack>
+          </Box>
+        </Modal>
 
       </Toolbar>
       </AppBar>

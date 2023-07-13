@@ -19,7 +19,8 @@ export default function muiIndex () {
                         transition: "all 0.35s",
                         boxShadow: "5px 5px 6px 0 rgba(0,0,0,.2)",
                         height: "7vh",
-                        borderRadius: "0"
+                        borderRadius: "0",
+                        minHeight: "50px",
                     }
                 },
             },
@@ -38,7 +39,7 @@ export default function muiIndex () {
 
             <ThemeProvider theme={supernovaTheme}>
                 <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage:
-                "linear-gradient(110deg,#006fe3,#017dfe 35%, 50%,#0068d4)"}} width="100vw" height="100vh" minHeight="100%" backgroundColor="blue"  display="flex" justifyContent={"center"} alignItems={"center"}>
+                "linear-gradient(110deg,#006fe3,#017dfe 35%, 50%,#0068d4)"}} width="100vw" minHeight="700px" height="100vh"  backgroundColor="blue"  display="flex" justifyContent={"center"} alignItems={"center"}>
                     <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
                         <CssBaseline />
                         
@@ -50,8 +51,8 @@ export default function muiIndex () {
                                 </Typography>
 
                                 <Stack direction="row" spacing={2}>
-                                    <Button href="/muiPlans" variant='contained'>Plans</Button>
-                                    <Button href="/muiContact" variant="outlined">Get In Touch</Button>
+                                    <Button href="/plans" variant='contained'>Plans</Button>
+                                    <Button href="/contact" variant="outlined">Get In Touch</Button>
                                 </Stack>
                                 
                             </Stack>

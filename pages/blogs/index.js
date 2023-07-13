@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogLink from "../../components/BlogLink"
 import { Typography, Container, Stack } from '@mui/material'
-import TestImage from "../../public/images/family.png"
+import Life from "../../public/images/what-is-life-insurance.jpg"
 import MajorMedical from "../../public/images/major-medical-hero.jpg"
 
 const BlogIndex = () => {
@@ -10,6 +10,7 @@ const BlogIndex = () => {
         <Container>
 
             <Typography 
+                mt="50px"
                 fontSize={{
                     xs: "2.5em",
                     sm: "4em"
@@ -24,7 +25,7 @@ const BlogIndex = () => {
 
                 <BlogLink 
                     href={"/blogs/life-and-critical-illness"}
-                    postImage={TestImage}
+                    postImage={Life}
                     title={"Life and Critical Illness"}
                     description={"Life insurance is a social contract where the unfortunate few are supported by the fortunate many. Its ‘magic dollars’ paid due to the fact your premiums paid into his pool of money..."}
                 />

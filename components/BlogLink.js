@@ -22,7 +22,7 @@ const Blog = ( { href, postImage, title, description }) => {
                 }}
             >
 
-                <Image width={100} src={postImage} alt="" />
+                <Image width={300}src={postImage} alt="" />
 
                 <Stack ml="30px" spacing={2} justifyContent={"center"} alignItems="flex-start" >
                     <Typography variant="h4">{ title }</Typography>

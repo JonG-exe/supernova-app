@@ -9,6 +9,9 @@ export default function MuiService ( { title, description, img}) {
         components: {
             MuiButton: {
                 styleOverrides: {
+                    root: {
+                        minHeight: "50px",
+                    },
                     contained: {
                         backgroundImage: "linear-gradient(180deg,#00ff6d ,#00cea9 ,#0cf)",
                         backgroundColor: "none",
@@ -26,12 +29,15 @@ export default function MuiService ( { title, description, img}) {
     return (
         <>
             <ThemeProvider theme={supernovaTheme}>
-                <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)" }} width="100vw" height="100vh" minHeight="100%" display="flex" justifyContent={"center"} alignItems={"center"}>
+                <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)" }} width="100vw" height="100vh" minHeight="700px" display="flex" justifyContent={"center"} alignItems={"center"}>
                     <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
                         <CssBaseline />
                         
                         <Stack padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
-                            <Stack mr={{md: "50px"}} maxWidth={{md: "800px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
+
+                            <Stack 
+                                mr={{md: "50px"}} maxWidth={{md: "800px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}
+                            >
 
                                 <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>{ title }</Typography>
                                 <Typography variant="body1" fontSize={{xs: "20px", md: "24px"}} maxWidth="600px">
@@ -39,8 +45,8 @@ export default function MuiService ( { title, description, img}) {
                                 </Typography>
 
                                 <Stack direction="row" spacing={2}>
-                                    <Button href="/quote" variant='contained'>Get A Quote</Button>
-                                    <Button variant="outlined">Read More...</Button>
+                                    <Button textAlign="center" href="/quote" variant='contained'>Get A Quote</Button>
+                                    <Button textAlign="center" variant="outlined">Read More...</Button>
                                 </Stack>
                                 
                             </Stack>

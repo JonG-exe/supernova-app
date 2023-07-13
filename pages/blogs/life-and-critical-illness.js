@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from "next/image"
-import InsuranceHero from "../../public/images/family.png"
+import InsuranceHero from "../../public/images/what-is-life-insurance.jpg"
 import { Box, Container, Typography, Stack } from '@mui/material'
 import Head from 'next/head'
+import "../../styles/blog.css"
+
 
 const LifeInsurance = () => {
   return (
@@ -27,8 +29,8 @@ const LifeInsurance = () => {
           </Stack>
 
 
-            <Box alignSelf="center">
-              <Image src={InsuranceHero} alt=""/>
+            <Box alignSelf="center" >
+              <Image className="blog-hero-image" src={InsuranceHero} alt=""/>
             </Box>
             
 
@@ -61,7 +63,7 @@ const LifeInsurance = () => {
             </Typography> <br />
 
 
-            <Typography variant="h3"><br />Cash value benefits can be use for:</Typography> <br />
+            <Typography variant="h3"><br />Cash value benefits can be used for:</Typography> <br />
 
             <ul>
               <li>- Emergency expenses</li>

@@ -60,6 +60,9 @@ export default function SignUp() {
             <Typography component="h1" variant="h5">
               Contact Us
             </Typography>
+            <Typography variant="body1">
+              Email: magray@maritimefinancial.com
+            </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, width:"700px", maxWidth:"90vw"}} >
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>

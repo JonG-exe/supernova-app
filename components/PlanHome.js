@@ -39,8 +39,8 @@ export default function MuiService ( { title, img}) {
 
                                 <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>{ title }</Typography>
                                
-                                <Stack direction="row" spacing={2}>
-                                    <Box mr={{md:"150px"}} className="insurance_box">
+                                <Stack direction="row" spacing={2} alignItems={{xs: "center"}}>
+                                    <Box mr={{xs: "0", md:"150px"}} >
 
                                             <Stack 
                                                 direction="row" 

@@ -3,6 +3,7 @@ import Image from "next/image"
 import MajorMedical from "../../public/images/major-medical-hero.jpg"
 import { Box, Container, Typography, Stack } from '@mui/material'
 import Head from 'next/head'
+import "../../styles/blog.css"
 
 const LifeInsurance = () => {
   return (
@@ -27,8 +28,8 @@ const LifeInsurance = () => {
             <Typography variant='h5' sx={{color:"grey"}}>11th July, 2023</Typography>
           </Stack>
 
-            <Box alignSelf="center" width="350px" height="350px" maxWidth="90vw" >
-              <Image alt="" maxWidth="100%" src={MajorMedical} />
+            <Box alignSelf="center" >
+              <Image classname="blog-hero-image" alt="" src={MajorMedical} />
             </Box>
 
 
