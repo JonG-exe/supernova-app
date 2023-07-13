@@ -78,15 +78,34 @@ export default function Nav () {
           aria-describedby="modal-modal-description"
           sx={{display: "flex", justifyContent:"center", alignItems:"center"}}
         >
-          <Box sx={{padding: "30px", width: "90vw", height: "90vh", backgroundColor: "white", borderRadius: "20px"}}>
+          <Box sx={{padding: "30px", width: "90vw", height: "80vh", backgroundColor: "white", borderRadius: "20px", border: "10px solid darkblue"}}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
               Navigation
             </Typography>
 
             <Stack>
-              <Link onClick={handleClose} style={{color: "black"}} href="/">Home</Link>
-              <Link onClick={handleClose} style={{color: "black"}} href="/blogs">Blog</Link>
-              <Link onClick={handleClose} style={{color: "black"}} href="/contact">Contact Us</Link>
+              <Stack>
+                <Image src={HomeIcon} alt="" />
+                <Link onClick={handleClose} style={{color: "black"}} href="/">Home</Link>
+              </Stack>
+              <Stack>
+                <Image src={ContactMailIcon} alt="" />
+                <Link onClick={handleClose} style={{color: "black"}} href="/contact">Plans</Link>
+              </Stack>
+              <Stack>
+                <Image src={RequestQuoteIcon} alt="" />
+                <Link onClick={handleClose} style={{color: "black"}} href="/contact">Contact Us</Link>
+              </Stack>
+              <Stack>
+                <Image src={SupportIcon} alt="" />
+                <Link onClick={handleClose} style={{color: "black"}} href="/contact">Quotes</Link>
+              </Stack>
+              <Stack>
+                <Image src={BookIcon} alt="" />
+                <Link onClick={handleClose} style={{color: "black"}} href="/blogs">Blog</Link>
+              </Stack>
+
+
             </Stack>
           </Box>
         </Modal>

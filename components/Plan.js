@@ -36,11 +36,12 @@ export default function MuiService ( { title, description, img}) {
                         <Stack padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
 
                             <Stack 
+                                padding="0 15px"
                                 mr={{md: "50px"}} maxWidth={{md: "800px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}
                             >
 
-                                <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>{ title }</Typography>
-                                <Typography variant="body1" fontSize={{xs: "20px", md: "24px"}} maxWidth="600px">
+                                <Typography textAlign={{xs: "center", md: "left"}} width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>{ title }</Typography>
+                                <Typography variant="body1" textAlign="justify" fontSize={{xs: "20px", md: "24px"}} maxWidth="600px">
                                     { description }
                                 </Typography>
 
@@ -51,7 +52,7 @@ export default function MuiService ( { title, description, img}) {
                                 
                             </Stack>
 
-                            <Box width="50%" maxWidth={{xs: "280px", md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                            <Box mb="30px" width="50%" maxWidth={{xs: "280px", md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
                                 <Image alt="" style={{width:"100%", height:"100%"}} src={img}/>
                             </Box>
                         </Stack>

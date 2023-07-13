@@ -43,9 +43,12 @@ export default function muiIndex () {
                     <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
                         <CssBaseline />
                         
-                        <Stack padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
-                            <Stack mr={{md: "50px"}} width={{xs: "100%", md:"50%"}} maxWidth={{md: "700px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
-                                <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>Supernova Financial Solutions</Typography>
+                        <Stack  padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
+
+                            <Stack  padding="0 15px" mr={{md: "50px"}} width={{xs: "100%", md:"50%"}} maxWidth={{md: "700px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
+
+                                <Typography textAlign={{xs: "center", md: "left"}} width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>Supernova Financial Solutions</Typography>
+
                                 <Typography variant="body1" fontSize={{xs: "20px", md: "24px"}} maxWidth="xs">
                                     Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns.
                                 </Typography>
@@ -57,7 +60,7 @@ export default function muiIndex () {
                                 
                             </Stack>
 
-                            <Box mt="25px" width="40%" height="100%" maxWidth={{xs: "280px" , md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                            <Box mb="30px" mt="25px" width="40%" height="100%" maxWidth={{xs: "280px" , md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
                                 {/* <Image style={{width:"100%", height:"100%"}} src={Mauricia} alt="" /> */}
 
                                 <Link href="/plans">
