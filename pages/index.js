@@ -13,7 +13,7 @@ export default function muiIndex () {
 
             MuiButton: {
                 styleOverrides: {
-                    root: {
+                    contained: {
                         backgroundImage: "linear-gradient(180deg,#00ff6d ,#00cea9 ,#0cf)",
                         backgroundColor: "none",
                         transition: "all 0.35s",
@@ -21,6 +21,7 @@ export default function muiIndex () {
                         height: "7vh",
                         borderRadius: "0",
                         minHeight: "50px",
+                        padding: "10px 30px"
                     }
                 },
             },

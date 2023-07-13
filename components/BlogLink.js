@@ -12,7 +12,7 @@ const Blog = ( { href, postImage, title, description }) => {
                 alignItems={"center"}
                 sx={{
                     color: "black",
-                    mt: "40px",
+                    mb: "40px",
                     width: "max-content",
                     p: {xs: "16px 8px", sm: "16px 32px"},
                     border: "1px solid lightgrey",

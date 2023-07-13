@@ -94,11 +94,11 @@ export default function Nav () {
               </Stack>
               <Stack>
                 <Image src={RequestQuoteIcon} alt="" />
-                <Link onClick={handleClose} style={{color: "black"}} href="/contact">Contact Us</Link>
+                <Link onClick={handleClose} style={{color: "black"}} href="/quote">Contact Us</Link>
               </Stack>
               <Stack>
                 <Image src={SupportIcon} alt="" />
-                <Link onClick={handleClose} style={{color: "black"}} href="/contact">Quotes</Link>
+                <Link onClick={handleClose} style={{color: "black"}} href="/plans">Quotes</Link>
               </Stack>
               <Stack>
                 <Image src={BookIcon} alt="" />

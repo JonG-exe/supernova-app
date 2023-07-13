@@ -29,7 +29,7 @@ const LifeInsurance = () => {
           </Stack>
 
             <Box alignSelf="center" >
-              <Image classname="blog-hero-image" alt="" src={MajorMedical} />
+              <Image className="blog-hero-image" alt="" src={MajorMedical} />
             </Box>
 
 
