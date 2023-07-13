@@ -28,7 +28,7 @@ const LifeInsurance = () => {
           </Stack>
 
             <Box alignSelf="center" width="350px" height="350px" maxWidth="90vw" >
-              <Image maxWidth="100%" src={MajorMedical} />
+              <Image alt="" maxWidth="100%" src={MajorMedical} />
             </Box>
 
 

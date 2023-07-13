@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/contact.css"
+import "../../styles/contact.css"
 import Image from "next/image"
 import Head from "next/head"
 

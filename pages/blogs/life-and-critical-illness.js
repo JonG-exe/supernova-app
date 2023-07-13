@@ -28,13 +28,13 @@ const LifeInsurance = () => {
 
 
             <Box alignSelf="center">
-              <Image src={InsuranceHero} />
+              <Image src={InsuranceHero} alt=""/>
             </Box>
             
 
             <Typography variant="subtitle1" alignSelf="flex-start"><b>Available for ages 0 - 69 years</b></Typography>
 
-            <Typography variant="body1">Life insurance is a social contract where the unfortunate few are supported by the fortunate many. It's ‘magic dollars’ paid due to the fact that your premiums paid into this pool of money, collected by an insurance company from other citizens like yourself, will pay future income you have not earned yet, in the event of death of disability.</Typography> <br />
+            <Typography variant="body1">Life insurance is a social contract where the unfortunate few are supported by the fortunate many. It{'s'} ‘magic dollars’ paid due to the fact that your premiums paid into this pool of money, collected by an insurance company from other citizens like yourself, will pay future income you have not earned yet, in the event of death of disability.</Typography> <br />
 
             <Typography variant="body1">
               Whole Life – (Cash Value life insurance to age 100 years)

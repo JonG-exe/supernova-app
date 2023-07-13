@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from "next/head"
 import Image from "next/image"
-import "../styles/services.css"
-import "../styles/left_Page_Breathe.css"
+import "../../styles/services.css"
+import "../../styles/left_Page_Breathe.css"
 
 // Image Imports
 import Menu from "../public/images/menu.png"

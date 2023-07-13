@@ -46,7 +46,7 @@ export default function muiIndex () {
                             <Stack mr={{md: "50px"}} width={{xs: "100%", md:"50%"}} maxWidth={{md: "700px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
                                 <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>Supernova Financial Solutions</Typography>
                                 <Typography variant="body1" fontSize={{xs: "20px", md: "24px"}} maxWidth="xs">
-                                    Giving you the piece of mind you need to secure you through life's unpredictable twists and turns.
+                                    Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns.
                                 </Typography>
 
                                 <Stack direction="row" spacing={2}>
