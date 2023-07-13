@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -58,9 +57,9 @@ export default function SignUp() {
               <LockOutlinedIcon />
             </Avatar> */}
             <Typography component="h1" variant="h5">
-              Contact Us
+              Get A Quote
             </Typography>
-            <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, width:"700px", maxWidth:"90vw"}} >
+            <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, width:"700px", maxWidth:"90vw"}}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <TextField
@@ -93,6 +92,55 @@ export default function SignUp() {
                     autoComplete="email"
                   />
                 </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    label="Occupation"
+                    name="occupation"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    label="Employment Address"
+                    name="employment-address"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    label="Home Address"
+                    name="home-address"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    label="Contact Number"
+                    name="Contact Number"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    label="Age"
+                    name="age"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    label="Income"
+                    name="income"
+                  />
+                </Grid>
+                
                 {/* <Grid item xs={12}>
                   <TextField
                     required

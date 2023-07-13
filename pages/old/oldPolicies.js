@@ -21,7 +21,7 @@ import Pension from "../public/images/pension.png"
 import HealthMain from "../public/images/health_main_img.png"
 
 
-export default function Services () {
+export default function Policies () {
   return (
     <>
         <Head>

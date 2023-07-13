@@ -1,91 +1,95 @@
-import React from 'react'
-import Button from "@mui/material/Button"
-import Typography from "@mui/material/Typography"
-import Stack from "@mui/material/Stack"
-import Box from "@mui/material/Box"
-import Image from "next/image"
 import Link from "next/link"
+import { Stack, Typography, Button, CssBaseline, Box } from '@mui/material';
+import { createTheme, ThemeProvider } from "@mui/material"
+import Image from "next/image"
+import HeroImg from "../public/images/supernova-financial-hero.png"
 import Head from "next/head"
-import "../styles/index.css"
-import Sharon from "../public/images/Sharon_Gray.png"
-import CarIcon from "../public/images/icons/new_icon-car.png"
-import HomeIcon from "../public/images/icons/new_icon-home.png"
-import MedicalIcon from "../public/images/icons/new_icon-medical.png"
-import PersonIcon from "../public/images/icons/new_icon-person.png"
 
 
-const Index = () => {
-  return (
-    <>
-        <Head>
-            <link rel="icon" href="/favicon.ico" />
-            <title>Trinidad Financial Solutions - Supernova Financial</title>
-        </Head>
-        <main>
-            {/* <Stack style={{maxWidth: "300px"}}>
-                <Typography variant='h3'>
-                    Supernova Financial Solutions
-                </Typography>
+export default function muiIndex () {
 
-                <Typography textAlign="justify">
-                    My goals align with your financial needs.
-                    I work with you to curate your most economical
-                    life solutions.
-                </Typography>
+    const supernovaTheme = createTheme({
+        components: {
 
-                <Stack justifyContent="space-between" direction="space-around">
-                    <ButtoLink href="/services" variant="contained">Get In Touch</ButtoLink>
-                    <ButtoLink href="/services" variant="contained">Services</ButtoLink>
-                </Stack>
-                
-            </Stack>
+            MuiButton: {
+                styleOverrides: {
+                    root: {
+                        backgroundImage: "linear-gradient(180deg,#00ff6d ,#00cea9 ,#0cf)",
+                        backgroundColor: "none",
+                        transition: "all 0.35s",
+                        boxShadow: "5px 5px 6px 0 rgba(0,0,0,.2)",
+                        height: "7vh",
+                        borderRadius: "0"
+                    }
+                },
+            },
 
-            <Stack style={{maxWidth: "300px"}}>
-                <div className="main_sec main_sec_2">
-                    <Image alt="" className="Sharon" src={Sharon}/>
+        }
+    })
 
-                    <Link href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </Link>
-                    <Link href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </Link>
-                    <Link href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </Link>
-                    <Link href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </Link>
-                </div> 
-                
-            </Stack> */}
-            
+    return (
+        <>
+            <Head>
+                <meta charset="utf-8" />
+                <meta name="description" content="" />
+                <title>Insurance Agency In Trinidad | Supernova Financial Solutions</title>
+                <link rel="canonical" href="https://supernova-financial.com" />
+            </Head>
 
-            <div className="main_sec main_sec_1">
-                <h1>Supernova <br /> Financial Solutions</h1>
+            <ThemeProvider theme={supernovaTheme}>
+                <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage:
+                "linear-gradient(110deg,#006fe3,#017dfe 35%, 50%,#0068d4)"}} width="100vw" height="100vh" minHeight="100%" backgroundColor="blue"  display="flex" justifyContent={"center"} alignItems={"center"}>
+                    <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
+                        <CssBaseline />
+                        
+                        <Stack padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
+                            <Stack mr={{md: "50px"}} width={{xs: "100%", md:"50%"}} maxWidth={{md: "700px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
+                                <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>Supernova Financial Solutions</Typography>
+                                <Typography variant="body1" fontSize={{xs: "20px", md: "24px"}} maxWidth="xs">
+                                    Giving you the piece of mind you need to secure you through life's unpredictable twists and turns.
+                                </Typography>
 
-                <p>
-                    {/* My goals align with your financial needs.
-                    I work with you to curate your most economical
-                    life solutions. */}
-                    Giving you the piece of mind you need to secure you through life{"'s"} unpredictable twists and turns.
-                </p>
+                                <Stack direction="row" spacing={2}>
+                                    <Button href="/muiPlans" variant='contained'>Plans</Button>
+                                    <Button href="/muiContact" variant="outlined">Get In Touch</Button>
+                                </Stack>
+                                
+                            </Stack>
 
-                <div className="mainButtonContainer">
+                            <Box mt="25px" width="40%" height="100%" maxWidth={{xs: "280px" , md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                                {/* <Image style={{width:"100%", height:"100%"}} src={Mauricia} alt="" /> */}
 
-                    <Link href="/services"className="CTA CTA_1">
-                    Services
-                    </Link>
+                                <Link href="/plans">
+                                    <Image style={{width:"100%", height:"100%"}} src={HeroImg} alt="" />
+                                </Link>
+                                
 
-                    <Link href="/contact" className="CTA CTA_2">
-                        Get In Touch
-                    </Link>
-                </div>
-            </div>
-            
-            <div className="main_sec main_sec_2">
-                <Image alt="" className="Sharon" src={Sharon}/>
+                                {/* <Box 
+                                    sx={{
+                                        backgroundColor: "blue",
+                                        width: "350px",
+                                        height: "350px",
+                                        borderRadius: "16px"
+                                    }}
+                                >
+                                    <Typography variant="h4">July 2023</Typography>
+                                    <Typography variant="h4">
+                                        Find A Policy That’s Right For You
+                                    </Typography>
 
-                <Link href="/services#section_2"><Image alt="" className="icon car-icon" src={CarIcon}/> </Link>
-                <Link href="/services#section_2"><Image alt="" className="icon home-icon" src={HomeIcon}/> </Link>
-                <Link href="/services#section_3"><Image alt="" className="icon medical-icon" src={MedicalIcon}/> </Link>
-                <Link href="/services#section_4"><Image alt="" className="icon person-icon" src={PersonIcon}/> </Link>
-            </div>
-        </main>
-    </>
-  )
+                                    <Stack direction="row">
+                                        <Typography variant="h4">View Curated Policies</Typography>
+                                        <Typography variant="h4">Policies</Typography>
+                                    </Stack>
+                                    
+                                </Box> */}
+                            </Box>
+
+                        </Stack>
+                    </Stack>
+                </Box>
+            </ThemeProvider>
+        </>
+    )
+
 }
-
-export default Index
