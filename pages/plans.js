@@ -19,7 +19,7 @@ export default function muiPolicies () {
                 <meta charset="utf-8" />
                 <meta name="description" content="" />
                 <title>Financial Plans | Supernova Financial Solutions</title>
-                <link rel="canonical" href="https://www.supernova-financial.com/plans" />
+                <link rel="canonical" href="https://www.supernova-financial.com/plans/" />
             </Head>
             
             <PlanHome 
