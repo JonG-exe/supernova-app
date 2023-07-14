@@ -18,8 +18,8 @@ export default function muiIndex () {
 
             {/* <ThemeProvider theme={supernovaTheme}> */}
                 <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage:
-                "linear-gradient(110deg,#006fe3,#017dfe 35%, 50%,#0068d4)"}} width="100vw" minHeight="700px" height="100vh"  backgroundColor="blue"  display="flex" justifyContent={"center"} alignItems={"center"}>
-                    <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
+                "linear-gradient(110deg,#006fe3,#017dfe 35%, 50%,#0068d4)"}} width="100vw" minHeight="800px" height="100vh"  backgroundColor="blue"  display="flex" justifyContent={"center"} alignItems={"center"}>
+                    <Stack p="40px 0 50px 0" width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
                         <CssBaseline />
                         
                         <Stack  padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
@@ -35,7 +35,7 @@ export default function muiIndex () {
                                     Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns, through meticulously personalized financial plans.
                                 </Typography>
 
-                                <Stack direction="row" spacing={2}>
+                                <Stack direction="row" spacing={2} >
                                     <Button href="/plans" variant='green'>Plans</Button>
                                     <Button href="/contact" variant="outlined">Get In Touch</Button>
                                 </Stack>

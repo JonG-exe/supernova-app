@@ -23,7 +23,7 @@ const LifeInsurance = ( { Text, title, mainImage, canonical } ) => {
         <link rel="canonical" href={"https://supernova-financial.com/" + {canonical}} />
       </Head>
 
-      <Container sx={{mt: "50px", mb:"100px", ml:"10px", mr:"10px"}}>
+      <Container sx={{mt: "50px", mb:"100px", }}>
 
         <div ref={heading}></div>
 
@@ -31,7 +31,9 @@ const LifeInsurance = ( { Text, title, mainImage, canonical } ) => {
           <Image className="blog-hero-image" src={ mainImage.img } alt={ mainImage.alt }/>
         </Box>
 
-        <article ref={articleRef}></article>
+        <Box m>
+          <article ref={articleRef}></article>
+        </Box>
       </Container>
     </>
   )

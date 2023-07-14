@@ -49,6 +49,7 @@ export default function SignUp() {
           <title>Contact Supernova Financial | Supernova Financial Solutions</title>
           <link rel="canonical" href="https://supernova-financial.com" />
       </Head>
+      
       <ThemeProvider theme={defaultTheme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
@@ -59,7 +60,6 @@ export default function SignUp() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-              
               }}
             >
               {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -140,7 +140,7 @@ export default function SignUp() {
               </Box>
             </Box>
           </Box>
-          <Copyright sx={{ mt: 5 }} />
+          <Copyright sx={{ mt: 3, mb: 5}} />
         </Container>
       </ThemeProvider>
     </>
