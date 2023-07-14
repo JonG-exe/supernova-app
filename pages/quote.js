@@ -69,7 +69,7 @@ export default function SignUp() {
           <meta charset="utf-8" />
           <meta name="description" content="" />
           <title>Financial Quotes | Supernova Financial Solutions</title>
-          <link rel="canonical" href="https://supernova-financial.com/plans" />
+          <link rel="canonical" href="https://www.supernova-financial.com/quote" />
       </Head>
 
       <ThemeProvider theme={defaultTheme}>

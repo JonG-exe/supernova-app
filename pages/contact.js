@@ -32,6 +32,7 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignUp() {
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -47,9 +48,9 @@ export default function SignUp() {
           <meta charset="utf-8" />
           <meta name="description" content="" />
           <title>Contact Supernova Financial | Supernova Financial Solutions</title>
-          <link rel="canonical" href="https://supernova-financial.com" />
+          <link rel="canonical" href="https://www.supernova-financial.com/contact" />
       </Head>
-      
+
       <ThemeProvider theme={defaultTheme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />

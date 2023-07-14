@@ -13,7 +13,7 @@ export default function muiIndex () {
                 <meta charset="utf-8" />
                 <meta name="description" content="" />
                 <title>Insurance Agency In Trinidad | Supernova Financial Solutions</title>
-                <link rel="canonical" href="https://supernova-financial.com" />
+                <link rel="canonical" href="https://www.supernova-financial.com" />
             </Head>
 
             {/* <ThemeProvider theme={supernovaTheme}> */}
