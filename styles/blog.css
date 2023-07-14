@@ -1,3 +1,16 @@
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
 .blog-hero-image {
     width: 90vw;
     height: auto;
@@ -5,3 +18,36 @@
     margin-bottom: 30px;
 }
 
+h1 {
+    font-size: 3.8em;
+    font-weight: bold;
+    color: "#00316E";
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00316E;
+}   
+
+  
+h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #00316E;
+    text-align: center;
+
+}
+
+/* ---------------------- Media Queries ---------------------- */
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+  

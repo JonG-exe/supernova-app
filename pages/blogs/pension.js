@@ -1,21 +1,19 @@
-import {React} from 'react'
-import MainImage from "../../public/images/what-is-life-insurance.jpg"
-import "../../styles/blog.css"
+import React from 'react'
+import MainImage from "../../public/images/retirement-on-the-beach.jpg"
 import BlogArticle from "../../components/BlogArticle"
-import Text from "../../blogText/life-and-critical-illness"
+import Text from "../../blogText/pension"
 
 const LifeInsurance = () => {
-
   return (
     <>
 
       <BlogArticle 
         Text={Text}
         title={"Understanding Life & Critical Illness"}
-        canonical={"/life-and-critical-illness"}
+        canonical={"/pension"}
         mainImage={{
           img: MainImage,
-          alt: "what is life insurance"
+          alt: "retirement on the beach"
         }}
       />
 

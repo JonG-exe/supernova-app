@@ -1,33 +1,11 @@
 import Link from "next/link"
 import { Stack, Typography, Button, CssBaseline, Box } from '@mui/material';
-import { createTheme, ThemeProvider } from "@mui/material"
 import Image from "next/image"
 import HeroImg from "../public/images/supernova-financial-hero.png"
 import Head from "next/head"
 
 
 export default function muiIndex () {
-
-    const supernovaTheme = createTheme({
-        components: {
-
-            MuiButton: {
-                styleOverrides: {
-                    contained: {
-                        backgroundImage: "linear-gradient(180deg,#00ff6d ,#00cea9 ,#0cf)",
-                        backgroundColor: "none",
-                        transition: "all 0.35s",
-                        boxShadow: "5px 5px 6px 0 rgba(0,0,0,.2)",
-                        height: "7vh",
-                        borderRadius: "0",
-                        minHeight: "50px",
-                        padding: "10px 30px"
-                    }
-                },
-            },
-
-        }
-    })
 
     return (
         <>
@@ -38,7 +16,7 @@ export default function muiIndex () {
                 <link rel="canonical" href="https://supernova-financial.com" />
             </Head>
 
-            <ThemeProvider theme={supernovaTheme}>
+            {/* <ThemeProvider theme={supernovaTheme}> */}
                 <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage:
                 "linear-gradient(110deg,#006fe3,#017dfe 35%, 50%,#0068d4)"}} width="100vw" minHeight="700px" height="100vh"  backgroundColor="blue"  display="flex" justifyContent={"center"} alignItems={"center"}>
                     <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
@@ -48,14 +26,17 @@ export default function muiIndex () {
 
                             <Stack  padding="0 15px" mr={{md: "50px"}} width={{xs: "100%", md:"50%"}} maxWidth={{md: "700px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
 
-                                <Typography textAlign={{xs: "center", md: "left"}} width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>Supernova Financial Solutions</Typography>
+                                {/* <Typography textAlign={{xs: "center", md: "left"}} width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>Supernova Financial Solutions</Typography> */}
 
-                                <Typography variant="body1" fontSize={{xs: "20px", md: "24px"}} maxWidth="xs">
-                                    Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns.
+                                <Typography textAlign={{xs: "center", md: "left"}} width="100%" variant="h1">Your Golden Egg Of Opportunity</Typography>
+
+
+                                <Typography variant="body1" sx={{fontSize:{xs: "20px", md: "22px"}, }} maxWidth="xs">
+                                    Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns, through meticulously personalized financial plans.
                                 </Typography>
 
                                 <Stack direction="row" spacing={2}>
-                                    <Button href="/plans" variant='contained'>Plans</Button>
+                                    <Button href="/plans" variant='green'>Plans</Button>
                                     <Button href="/contact" variant="outlined">Get In Touch</Button>
                                 </Stack>
                                 
@@ -93,7 +74,7 @@ export default function muiIndex () {
                         </Stack>
                     </Stack>
                 </Box>
-            </ThemeProvider>
+            {/* </ThemeProvider> */}
         </>
     )
 

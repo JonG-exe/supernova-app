@@ -1,12 +1,17 @@
 import { Stack, Typography, Button, CssBaseline, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from "@mui/material"
 import Image from "next/image"
+import Link from "next/link"
+import PlanMenuItem from "./PlanMenuItem"
 
 // Image Imports
 import CarIcon from "../public/images/icons/new_icon-car.png"
 import MedicalIcon from "../public/images/icons/new_icon-medical.png"
 import HomeIcon from "../public/images/icons/new_icon-home.png"
 import PersonIcon from "../public/images/icons/new_icon-person.png"
+import InvestmentsIcon from "../public/images/icons/investments-icon.png"
+import LifeCriticalIllnessIcon from "../public/images/icons/life-and-critical-illness-icon.png"
+import LoansIcon from "../public/images/icons/loans-icon.png"
 
 export default function MuiService ( { title, img}) {
 
@@ -39,95 +44,44 @@ export default function MuiService ( { title, img}) {
 
                                 <Typography width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>{ title }</Typography>
                                
-                                <Stack direction="row" spacing={2} alignItems={{xs: "center"}}>
-                                    <Box mr={{xs: "0", md:"150px"}} >
+                                <Stack direction="column" spacing={2} mr={{xs: "0", md:"150px"}} alignItems={{xs: "center"}}>
 
-                                            <Stack 
-                                                direction="row" 
-                                                alignItems="center"
-                                                sx={{padding: "10px 45px 10px 40px", mt:"15px"}}
-                                                border="1px solid lightgrey" 
-                                                borderRadius="15px"
-                                                width="350px"
-                                                minWidth="100%"
-                                                boxShadow="2px 4px 7px hsla(0,0%,51%,.749)"
-                                            >
-                                                <Image width={75} alt="" src={CarIcon}/>
-                                                <Typography ml="20px" variant="h5">Home & Auto</Typography>                
-                                            </Stack>
+                                    {/* <PlanMenuItem 
+                                        icon={CarIcon} 
+                                        name={"Home & Auto"}
+                                        href="#home-and-auto"
+                                    /> */}
 
-                                            <Stack 
-                                                direction="row" 
-                                                alignItems="center"
-                                                sx={{padding: "10px 45px 10px 40px", mt:"15px"}}
-                                                border="1px solid lightgrey" 
-                                                borderRadius="15px"
-                                                width="350px"
-                                                minWidth="max-content"
-                                                boxShadow="2px 4px 7px hsla(0,0%,51%,.749)"
-                                            >
-                                                <Image width={75} alt="" src={MedicalIcon}/>
-                                                <Typography ml="20px" variant="h5">Life & Critical Illness</Typography>                
-                                            </Stack>
+                                    <PlanMenuItem 
+                                        icon={LifeCriticalIllnessIcon} 
+                                        name={"Life & Critical Illness"}
+                                        href="#life-and-critical-illness"
+                                    />
 
-                                            <Stack 
-                                                direction="row" 
-                                                alignItems="center"
-                                                sx={{padding: "10px 45px 10px 40px", mt:"15px"}}
-                                                border="1px solid lightgrey" 
-                                                borderRadius="15px"
-                                                width="350px"
-                                                minWidth="100%"
-                                                boxShadow="2px 4px 7px hsla(0,0%,51%,.749)"
-                                            >
-                                                <Image width={75} alt="" src={MedicalIcon}/>
-                                                <Typography ml="20px" variant="h5">Major Medical</Typography>                
-                                            </Stack>
+                                    <PlanMenuItem 
+                                        icon={MedicalIcon} 
+                                        name={"Major Medical"}
+                                        href="#major-medical"
+                                    />
 
-                                            <Stack
-                                                direction="row" 
-                                                alignItems="center"
-                                                sx={{padding: "10px 45px 10px 40px", mt:"15px", mb:"15px"}}
-                                                border="1px solid lightgrey" 
-                                                borderRadius="15px"
-                                                width="350px"
-                                                minWidth="100%"
-                                                boxShadow="2px 4px 7px hsla(0,0%,51%,.749)"
-                                            >
-                                                <Image width={75} alt="" src={PersonIcon}/>
-                                                <Typography ml="20px" variant="h5">Pension</Typography>                
-                                            </Stack>
+                                    <PlanMenuItem 
+                                        icon={PersonIcon} 
+                                        name={"Pension"}
+                                        href="#pension"
+                                    />
 
-                                            <Stack
-                                                direction="row" 
-                                                alignItems="center"
-                                                sx={{padding: "10px 45px 10px 40px", mt:"15px", mb:"15px"}}
-                                                border="1px solid lightgrey" 
-                                                borderRadius="15px"
-                                                width="350px"
-                                                minWidth="100%"
-                                                boxShadow="2px 4px 7px hsla(0,0%,51%,.749)"
-                                            >
-                                                <Image width={75} alt="" src={PersonIcon}/>
-                                                <Typography ml="20px" variant="h5">Loans</Typography>                
-                                            </Stack>
+                                    {/* <PlanMenuItem 
+                                        icon={LoansIcon} 
+                                        name={"Loans"}
+                                        href="#loans"
+                                    /> */}
 
-                                            <Stack
-                                                direction="row" 
-                                                alignItems="center"
-                                                sx={{padding: "10px 45px 10px 40px", mt:"15px", mb:"15px"}}
-                                                border="1px solid lightgrey" 
-                                                borderRadius="15px"
-                                                width="350px"
-                                                minWidth="100%"
-                                                boxShadow="2px 4px 7px hsla(0,0%,51%,.749)"
-                                            >
-                                                <Image width={75} alt="" src={PersonIcon}/>
-                                                <Typography ml="20px" variant="h5">Investments</Typography>                
-                                            </Stack>
+                                    <PlanMenuItem 
+                                        icon={InvestmentsIcon} 
+                                        name={"Financing"}
+                                        href="#financing"
+                                    />
 
-
-                                    </Box>
                                 </Stack>
                                 
                             </Stack>

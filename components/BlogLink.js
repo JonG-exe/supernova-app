@@ -24,8 +24,14 @@ const Blog = ( { href, postImage, title, description }) => {
 
                 <Image width={300}src={postImage} alt="" />
 
-                <Stack ml="30px" spacing={2} justifyContent={"center"} alignItems="flex-start" >
-                    <Typography variant="h4">{ title }</Typography>
+                <Stack 
+                    mt="20px" 
+                    ml={{xs: "0", sm: "30px"}} 
+                    spacing={2} 
+                    justifyContent={"center"} 
+                    alignItems={{xs: "center", md:"flex-start"}} 
+                >
+                    <Typography textAlign={{xs: "center", md:"left"}}  variant="h4">{ title }</Typography>
                     <Typography variant="body1" >{ description }</Typography>
 
                     <Button variant="contained" href={ href }>Read More...</Button>

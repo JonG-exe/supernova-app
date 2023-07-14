@@ -3,62 +3,40 @@ import { createTheme, ThemeProvider } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function MuiService ( { title, description, img}) {
-
-    const supernovaTheme = createTheme({
-        components: {
-            MuiButton: {
-                styleOverrides: {
-                    root: {
-                        minHeight: "50px",
-                    },
-                    contained: {
-                        backgroundImage: "linear-gradient(180deg,#00ff6d ,#00cea9 ,#0cf)",
-                        backgroundColor: "none",
-                        transition: "all 0.35s",
-                        boxShadow: "5px 5px 6px 0 rgba(0,0,0,.2)",
-                        height: "7vh",
-                        borderRadius: "0",
-                        fontSize: "1.1em"
-                    }
-                },
-            },
-        }
-    })
+export default function MuiService ( { title, id, description, img, moreInfo }) {
 
     return (
         <>
-            <ThemeProvider theme={supernovaTheme}>
-                <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)" }} width="100vw" height="100vh" minHeight="700px" display="flex" justifyContent={"center"} alignItems={"center"}>
-                    <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
-                        <CssBaseline />
-                        
-                        <Stack padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
+            <Box id={id} sx={{boxSizing: "border-box", padding: "10px", backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)" }} width="100vw" height="100vh" minHeight="700px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                <Stack width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
+                    <CssBaseline />
+                    
+                    <Stack padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
 
-                            <Stack 
-                                padding="0 15px"
-                                mr={{md: "50px"}} maxWidth={{md: "800px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}
-                            >
+                        <Stack 
+                            padding="0 15px"
+                            mr={{md: "50px"}} maxWidth={{md: "800px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}
+                        >
 
-                                <Typography textAlign={{xs: "center", md: "left"}} width="100%" component={"h1"} variant={{xs: "h2", sm: "h1"}}>{ title }</Typography>
-                                <Typography variant="body1" textAlign="justify" fontSize={{xs: "20px", md: "24px"}} maxWidth="600px">
-                                    { description }
-                                </Typography>
+                            <Typography textAlign={{xs: "center", md: "left"}} width="100%" variant="h2" >{ title }</Typography>
+                            <Typography variant="body1" textAlign="justify" fontSize={{xs: "20px", md: "24px"}} maxWidth="600px">
+                                { description }
+                            </Typography>
 
-                                <Stack direction="row" spacing={2}>
-                                    <Button textAlign="center" href="/quote" variant='contained'>Get A Quote</Button>
-                                    <Button textAlign="center" variant="outlined">Read More...</Button>
-                                </Stack>
-                                
+                            <Stack direction="row" spacing={2}>
+                                <Button href="/quote"textAlign="center"  variant='green'>Get A Quote</Button>
+
+                                <Button href={moreInfo} textAlign="center" variant="outlined">More Info...</Button>
                             </Stack>
-
-                            <Box mb="30px" width="50%" maxWidth={{xs: "280px", md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
-                                <Image alt="" style={{width:"100%", height:"100%"}} src={img}/>
-                            </Box>
+                            
                         </Stack>
+
+                        <Box mb="30px" width="50%" maxWidth={{xs: "280px", md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                            <Image alt="" style={{width:"100%", height:"100%"}} src={img}/>
+                        </Box>
                     </Stack>
-                </Box>
-            </ThemeProvider>
+                </Stack>
+            </Box>
         </>
     )
 
