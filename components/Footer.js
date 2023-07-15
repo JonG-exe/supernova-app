@@ -60,35 +60,37 @@ const Footer = () => {
                 marginTop="30px"
                 spacing={5}
             >
-                <Box 
-                    width="50px" 
-                    height="50px" 
-                    border="2px solid white" 
-                    borderRadius="50%" 
-                    padding="10px"
-                    display="flex"
-                    justifyContent={"center"}
-                    alignItems="center"
-                >
-                    <Link href="facebook.com">
-                        <FacebookIcon />
-                    </Link>
-                </Box>
+                <Link href="https://www.facebook.com/profile.php?id=100085664509656" target="_blank">
+                    <Box 
+                        width="50px" 
+                        height="50px" 
+                        border="2px solid white" 
+                        borderRadius="50%" 
+                        padding="10px"
+                        display="flex"
+                        justifyContent={"center"}
+                        alignItems="center"
+                    >
+                            <FacebookIcon />
+                    </Box>
+                </Link>
 
-                <Box
-                    width="50px" 
-                    height="50px" 
-                    border="2px solid white" 
-                    borderRadius="50%" 
-                    padding="10px"
-                    display="flex"
-                    justifyContent={"center"}
-                    alignItems="center"
-                >
-                    <Link href="facebook.com">
-                        <InstagramIcon />
-                    </Link>
-                </Box>
+
+                <Link href="https://www.instagram.com/supernova_financial/" target="_blank">
+                    <Box
+                        width="50px" 
+                        height="50px" 
+                        border="2px solid white" 
+                        borderRadius="50%" 
+                        padding="10px"
+                        display="flex"
+                        justifyContent={"center"}
+                        alignItems="center"
+                    >
+                            <InstagramIcon />
+                    </Box>
+                </Link>
+
 
             </Stack>
         </Stack>

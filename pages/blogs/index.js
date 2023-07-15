@@ -64,6 +64,13 @@ const BlogIndex = () => {
                         title={"Pension"}
                         description={"Retirement planning is something most people ignore or put off to their own hurts until too late.  Starting early guarantees you will put in enough to have fun and do what you choose to do in your ‘golden’ years."}
                     />
+
+                    <BlogLink 
+                        href={"/blogs/financing"}
+                        postImage={Retirement}
+                        title={"Financing"}
+                        description={"The secret to expanding the &lsquo;borders of your habitation&rsquo;, living a bigger, fuller life lies in your ability to access the tools to achieve your objectives.."}
+                    />
                     
 
                 </Stack>
