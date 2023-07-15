@@ -31,18 +31,42 @@ export default function muiIndex () {
                                 <Typography textAlign={{xs: "center", md: "left"}} width="100%" variant="h1">Your Golden Egg Of Opportunity</Typography>
 
 
-                                <Typography variant="body1" sx={{fontSize:{xs: "20px", md: "22px"}, }} maxWidth="xs">
+                                <Typography variant="body1" sx={{fontSize:{xs: "16px", sm: "22px"}, }} maxWidth="xs">
                                     Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns, through meticulously personalized financial plans.
                                 </Typography>
 
-                                <Stack direction="row" spacing={2} >
-                                    <Button href="/plans" variant='green'>Plans</Button>
-                                    <Button href="/contact" variant="outlined">Get In Touch</Button>
+                                <Stack 
+                                    direction={{xs: "row"}} 
+                                    spacing={{xs: 1, sm: 2}}
+                                >
+                                    <Button 
+                                        href="/plans" 
+                                        variant='green'
+                                    >
+                                        Plans
+                                    </Button>
+
+                                    <Button 
+                                        href="/contact" 
+                                        variant="outlined"
+                                    >
+                                        Get In Touch
+                                    </Button>
                                 </Stack>
                                 
                             </Stack>
 
-                            <Box mb="30px" mt="25px" width="40%" height="100%" maxWidth={{xs: "280px" , md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                            <Box 
+                                mb="30px" 
+                                mt="25px" 
+                                width="40%" 
+                                height="100%" 
+                                maxWidth={{xs: "280px" , md: "600px"}} 
+                                minWidth={{xs: "85%", sm:"350px"}} 
+                                display="flex" 
+                                justifyContent={"center"} 
+                                alignItems={"center"}
+                            >
                                 {/* <Image style={{width:"100%", height:"100%"}} src={Mauricia} alt="" /> */}
 
                                 <Link href="/plans">

@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Logo from "../public/images/supernova-financial-logo.png" 
 import { Modal, Typography, Button, AppBar, Toolbar, Box, Stack } from "@mui/material"
+import ModalItem from "./ModalItem"
 
 // Icons
 import HomeIcon from '@mui/icons-material/Home';
@@ -21,25 +22,46 @@ export default function Nav () {
   return (
     <>
       <AppBar position="relative">
-        <Toolbar sx={{justifyContent: "space-around", height:"80px", backgroundColor: "blue", backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)"}} alignItems="center">
+        <Toolbar 
+          sx={{
+            justifyContent: {
+              xs: "space-between",
+              sm: "space-around"
+            },
+            height:"80px", 
+            backgroundColor: "blue", 
+            backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)"}} 
+          alignItems="center"
+        >
           
           <Box mr={{xs: "none", sm: "auto"}} ml={{ xs: "none", sm: "20px"}}>
             <Link href="/">
-              <Stack direction="row" spacing={2} alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
+              <Stack 
+                direction="row" 
+                spacing={2} 
+                alignItems="center" 
+                justifyContent={"center"} 
+                sx={{ marginRight:"50px",}}
+              >
+
                 <Image width={70} src={Logo} alt="" />
                 <Typography display={{xs: "none", md: "inline-block"}} variant="h6">Supernova Financial</Typography>
+
               </Stack>
             </Link>
           </Box>
 
-          <Link href="/plans">
-            <Stack alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
-              <SupportIcon  sx={{fontSize: "35px", mb: "2px"}}  />
-              <span>Plans</span>
-            </Stack>
-          </Link>
 
           <Stack direction={"row"} display={{ xs: "none", sm: "flex",}}>
+
+            <Link href="/plans">
+              <Stack alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
+                <SupportIcon 
+                  sx={{fontSize: "35px", mb: "2px"}}  />
+                <span>Plans</span>
+              </Stack>
+            </Link>
+
             <Link href="/contact">
               <Stack alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
                 <ContactMailIcon  sx={{fontSize: "35px", mb: "2px"}}  />
@@ -78,40 +100,54 @@ export default function Nav () {
             aria-describedby="modal-modal-description"
             sx={{display: "flex", justifyContent:"center", alignItems:"center"}}
           >
-            <Stack sx={{padding: "30px", width: "90vw", height: "80vh", backgroundColor: "white", borderRadius: "5px", border: "4px solid darkblue"}}>
+            <Stack sx={{padding: "30px", width: "90vw", height: "80vh", backgroundColor: "white", borderRadius: "5px", border: "4px solid darkblue"}} alignItems="center">
 
-              <Stack height="100%" width="100%" justifyContent="space-around">
+              <Stack 
+                height="100%" 
+                width="100%" 
+                justifyContent="space-around"
+              >
 
-                <Stack direction="row" spacing={4} alignItems="center">
-                  <HomeIcon sx={{fontSize: "5em", color: "black"}}/>
-                  <Link onClick={handleClose} style={{color: "black"}} href="/">
-                    <Typography variant="h4">Home</Typography>
-                  </Link>
-                </Stack>
-                <Stack direction="row" spacing={4} alignItems="center">
-                  <SupportIcon sx={{fontSize: "5em", color: "black"}} />
-                  <Link onClick={handleClose} style={{color: "black"}} href="/plans">
-                    <Typography variant="h4">Plans</Typography>
-                  </Link>
-                </Stack>
-                <Stack direction="row" spacing={4} alignItems="center">
-                  <ContactMailIcon sx={{fontSize: "5em", color: "black"}} />
-                  <Link onClick={handleClose} style={{color: "black"}} href="/contact">
-                    <Typography variant="h4">Contact</Typography>
-                  </Link>
-                </Stack>
-                <Stack direction="row" spacing={4} alignItems="center">
-                  <RequestQuoteIcon sx={{fontSize: "5em", color: "black"}} />
-                  <Link onClick={handleClose} style={{color: "black"}} href="/quote">
-                    <Typography variant="h4">Quotes</Typography>
-                  </Link>
-                </Stack>
-                <Stack direction="row" spacing={4} alignItems="center">
-                  <BookIcon sx={{fontSize: "5em", color: "black"}} />
-                  <Link onClick={handleClose} style={{color: "black"}} href="/blogs">
-                    <Typography variant="h4">Blog</Typography>
-                  </Link>
-                </Stack>
+                <Link onClick={handleClose} style={{color: "black"}} href="/">
+                  <Stack direction="row" spacing={4} alignItems="center">
+                    <HomeIcon sx={{
+                      fontSize: "3em", 
+                      color: "black"}}
+                    />
+                      <Typography variant="h5">Home</Typography>
+                  </Stack>
+                </Link>
+
+                <Link onClick={handleClose} style={{color: "black"}} href="/plans">
+                  <Stack direction="row" spacing={4} alignItems="center">
+                    <SupportIcon sx={{fontSize: "3em", color: "black"}} />
+                      <Typography variant="h5">Plans</Typography>
+                  </Stack>
+                </Link>
+
+
+                <Link onClick={handleClose} style={{color: "black"}} href="/contact">
+                  <Stack direction="row" spacing={4} alignItems="center">
+                    <ContactMailIcon sx={{fontSize: "3em", color: "black"}} />
+                      <Typography variant="h5">Contact</Typography>
+                  </Stack>
+                </Link>
+
+
+                <Link onClick={handleClose} style={{color: "black"}} href="/quote">
+                  <Stack direction="row" spacing={4} alignItems="center">
+                    <RequestQuoteIcon sx={{fontSize: "3em", color: "black"}} />
+                      <Typography variant="h5">Quotes</Typography>
+                  </Stack>
+                </Link>
+
+                <Link onClick={handleClose} style={{color: "black"}} href="/blogs">
+                  <Stack direction="row" spacing={4} alignItems="center">
+                    <BookIcon sx={{fontSize: "3em", color: "black"}} />
+                      <Typography variant="h5">Blog</Typography>
+                  </Stack>
+                </Link>
+
 
               </Stack>
             </Stack>

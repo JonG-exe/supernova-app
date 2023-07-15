@@ -2,6 +2,7 @@ import React from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import { Button, Stack, Typography } from "@mui/material"
+import "../styles/blog.css"
 
 const Blog = ( { href, postImage, title, description }) => {
   return (
@@ -22,7 +23,7 @@ const Blog = ( { href, postImage, title, description }) => {
                 }}
             >
 
-                <Image width={300}src={postImage} alt="" />
+                <Image className="blog-link-image" src={postImage} alt="" />
 
                 <Stack 
                     mt="20px" 

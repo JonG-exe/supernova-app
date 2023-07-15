@@ -19,7 +19,17 @@ const PlanMenuItem = ( { icon, name, href }) => {
             <Box marginLeft={{xs: "18px", sm: "0"}}>
                 <Image width={75} alt="" src={icon}/>
             </Box>
-            <Typography minWidth={{xs:"100%", sm:"max-content"}} textAlign={{xs: "center", sm: "left" }} ml="20px" variant="h5">{ name }</Typography>                
+
+            <Typography 
+              minWidth={{xs:"100%", sm:"max-content"}} 
+              textAlign={{xs: "center", sm: "left" }} 
+              ml="20px" 
+              variant="h5"
+              fontSize={{xs: "18px", sm:"22px"}}
+            >
+              { name }
+            </Typography>  
+
         </Stack>
     </Link>
   )

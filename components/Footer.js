@@ -7,31 +7,45 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <>
-        <Stack sx={{
-            width:"100vw", alignItems:"center", justifyContent:"center",
-            padding: "50px",
-            margin: "0px 0 0 0",
-            boxShadow: "10px 10px 15px rgba(0, 0, 0, 0.40)",
-            backgroundColor: " #02198B",
-            color: "white",
+        <Stack 
+            sx={{
+                
+                width:"100vw", 
+                alignItems:"center",
+                justifyContent:"center",
+                padding: {xs: "20px", sm:"50px"},
+                margin: "0px 0 0 0",
+                boxShadow: "10px 10px 15px rgba(0, 0, 0, 0.40)",
+                backgroundColor: " #02198B",
+                color: "white",
             }}
         >
             <Stack 
-                direction="row"
+                direction= {{xs: "column", sm: "row"}}
                 spacing={10}
                 width="100%"
             >
-                <Stack ml="10px">
-                    <Typography variant="h5">Pension</Typography>
-                    <Typography variant="h5">Contact Us</Typography>
-                    <Typography variant="h5">Plans</Typography>
-                    <Typography variant="h5">Quotes</Typography>
-                    <Typography variant="h5">Blog</Typography>
+                <Stack 
+                    mt={{xs: "30px", sm: "0"}}
+                    ml={{xs: "0px", sm: "10px"}} 
+                    textAlign={{xs: "center", sm: "start"}}
+                    justifyContent={{xs: "space-between", sm: "flex"}}
+                    spacing={{ xs: 3 }}
+                >
+                    <Typography variant="paragraph">Pension</Typography>
+                    <Typography variant="paragraph">Contact Us</Typography>
+                    <Typography variant="paragraph">Plans</Typography>
+                    <Typography variant="paragraph">Quotes</Typography>
+                    <Typography variant="paragraph">Blog</Typography>
                 </Stack>
 
-                <Stack mr="10px">
-                    <Typography variant="h5">Tel. 769-4505</Typography>
-                    <Typography variant="h5">e-mail: magray@maritimefinancial.com</Typography>
+                <Stack 
+                    ml={{xs: "0px", sm: "10px"}} 
+                    textAlign={{xs: "center", sm: "start"}}
+                >
+                    <Typography variant="paragraph">Tel. 769-4505</Typography>
+
+                    <Typography variant="paragraph">e-mail: magray@maritimefinancial.com</Typography>
                 </Stack>
                 
             </Stack>

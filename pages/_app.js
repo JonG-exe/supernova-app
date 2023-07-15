@@ -22,6 +22,9 @@ export default function App({ Component, pageProps }) {
             '@media (max-width:600px)': {
               fontSize: '2em',
             },
+            '@media (max-width:400px)': {
+              fontSize: '1.5em',
+            },
           },
           
           h2: {
@@ -30,14 +33,28 @@ export default function App({ Component, pageProps }) {
             color: "#00316E",
             '@media screen and (max-width: 600px)': {
               fontSize: '2em',
-            }
+            },
+            '@media (max-width:400px)': {
+              fontSize: '1.5em',
+            },
 
+          },
+
+          body1: 
+            {
+            '@media (max-width:350px)': {
+              fontSize: '1em',
+              textAlign: "justify"
+            },
           }
         },
       },
 
       MuiButton: {
         styleOverrides: {
+            root: {
+              textAlign: "center",
+            },
             green: {
                 color: "white",
                 backgroundImage: "linear-gradient(180deg,#00ff6d ,#00cea9 ,#0cf)",

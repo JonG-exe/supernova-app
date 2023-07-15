@@ -35,7 +35,15 @@ export default function MuiService ( { title, img}) {
     return (
         <>
             <ThemeProvider theme={supernovaTheme}>
-                <Box sx={{boxSizing: "border-box", padding: "10px", backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)"}} width="100vw"  minHeight="100%" display="flex" justifyContent={"center"} alignItems={"center"}>
+                <Box 
+                    sx={{boxSizing: "border-box", padding: "10px", 
+                    backgroundImage: "linear-gradient(110deg,#006fe3 50%,#0068d4)"}} 
+                    width="100vw"  
+                    minHeight="100%" 
+                    display="flex" 
+                    justifyContent={"center"} 
+                    alignItems={"center"}
+                >
                     <Stack width="100%" height="100%" minHeight="100vh" backgroundColor="white" justifyContent={"center"}> 
                         <CssBaseline />
                         
@@ -86,7 +94,14 @@ export default function MuiService ( { title, img}) {
                                 
                             </Stack>
 
-                            <Box width="50%" maxWidth={{xs: "280px", md: "600px"}} minWidth="280px" display="flex" justifyContent={"center"} alignItems={"center"}>
+                            <Box 
+                                width="50%" 
+                                maxWidth={{xs: "280px", md: "600px"}} 
+                                minWidth={{xs: "85%", sm:"350px"}} 
+                                display="flex" 
+                                justifyContent={"center"} 
+                                alignItems={"center"}
+                            >
                                 <Image alt="" style={{width:"100%", height:"100%"}} src={img}/>
                             </Box>
                         </Stack>

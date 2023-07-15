@@ -11,6 +11,22 @@ ol li {
     list-style-type: decimal;
 }
 
+.blog-link-image {
+    width: 80%;
+    height: auto;
+    min-width: 210px;
+    max-width: 350px;
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 900px) {
+    .blog-link-image {
+        min-width: 350px;
+        height: auto;
+        padding-top: 0;
+    }
+}
+
 .blog-hero-image {
     width: 90vw;
     height: auto;
