@@ -42,11 +42,17 @@ export default function App({ Component, pageProps }) {
 
           body1: 
             {
-            '@media (max-width:350px)': {
-              fontSize: '1em',
-              textAlign: "justify"
-            },
-          }
+              '@media (max-width:350px)': {
+                fontSize: '1.1em',
+                textAlign: "justify",
+                wordSpacing: "-2px"
+              },
+              '@media (max-width:280px)': {
+                fontSize: '1.1em',
+                textAlign: "center",
+                wordSpacing: "5px"
+              },
+            }
         },
       },
 

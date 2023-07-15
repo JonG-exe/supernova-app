@@ -22,7 +22,7 @@ export default function muiIndex () {
                     <Stack p="40px 0 50px 0" width="100%" height="100%" backgroundColor="white" justifyContent={"center"}> 
                         <CssBaseline />
                         
-                        <Stack  padding={{xs: "10px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
+                        <Stack  padding={{xs: "1px", sm: "50px"}} direction={{xs: "column-reverse", md: "row"}} justifyContent={"center"} alignItems={{xs: "center"}} >
 
                             <Stack  padding="0 15px" mr={{md: "50px"}} width={{xs: "100%", md:"50%"}} maxWidth={{md: "700px"}} spacing={4} justifyContent={"center"} alignItems={{xs: "center", md: "flex-start"}}>
 
