@@ -32,11 +32,11 @@ const Footer = () => {
                     justifyContent={{xs: "space-between", sm: "flex"}}
                     spacing={{ xs: 3 }}
                 >
-                    <Typography variant="paragraph">Pension</Typography>
-                    <Typography variant="paragraph">Contact Us</Typography>
-                    <Typography variant="paragraph">Plans</Typography>
-                    <Typography variant="paragraph">Quotes</Typography>
-                    <Typography variant="paragraph">Blog</Typography>
+                    <Link href="/pension">Pension</Link>
+                    <Link href="/contact">Contact Us</Link>
+                    <Link href="/plans">Plans</Link>
+                    <Link href="/quote">Quotes</Link>
+                    <Link href="/blog">Blog</Link>
                 </Stack>
 
                 <Stack 
