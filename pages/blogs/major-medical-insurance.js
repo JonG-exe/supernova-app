@@ -10,7 +10,8 @@ const LifeInsurance = () => {
       <BlogArticle 
         Text={Text}
         title={"Understanding Life & Critical Illness"}
-        canonical={"/major-medical"}
+        canonical={"/major-medical-insurance"}
+        description={""}
         mainImage={{
           img: MainImage,
           alt: "prescription at doctor's office"

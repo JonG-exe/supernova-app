@@ -13,6 +13,7 @@ const LifeInsurance = () => {
         Text={Text}
         title={"Understanding Life & Critical Illness"}
         canonical={"/life-and-critical-illness"}
+        description={""}
         mainImage={{
           img: MainImage,
           alt: "what is life insurance"

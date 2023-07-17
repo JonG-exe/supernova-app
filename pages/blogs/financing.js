@@ -14,6 +14,7 @@ const LifeInsurance = () => {
         Text={Text}
         title={"Financing"}
         canonical={"/financing"}
+        description={""}
         mainImage={{
           img: MainImage,
           alt: "about loans and investment financing at maritime"

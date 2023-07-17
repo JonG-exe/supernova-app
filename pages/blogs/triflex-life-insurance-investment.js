@@ -3,7 +3,6 @@ import BlogArticle from "../../components/BlogArticle"
 import Text from "../../blogText/triflex"
 import MainImage from "../../public/images/financing-hero.jpg"
 
-
 const LifeInsurance = () => {
   return (
     <>
@@ -12,6 +11,7 @@ const LifeInsurance = () => {
         Text={Text}
         title={"Triflex - Life Insurance Investment"}
         canonical={"/triflex-life-insurance-investment"}
+        description={""}
         mainImage={{
           img: MainImage,
           alt: "triflex life insurance investment"

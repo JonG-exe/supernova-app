@@ -4,7 +4,7 @@ import { Box, Container, Typography, Stack } from '@mui/material'
 import Head from 'next/head'
 import "../styles/blog.css"
 
-const LifeInsurance = ( { Text, title, mainImage, canonical } ) => {
+const LifeInsurance = ( { Text, title, description, mainImage, canonical } ) => {
 
   const articleRef = useRef(null)
   const heading = useRef(null)
@@ -18,9 +18,9 @@ const LifeInsurance = ( { Text, title, mainImage, canonical } ) => {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <meta name="description" content="" />
+        <meta name="description" content={description} />
         <title>{ title } | Supernova Financial Solutions</title>
-        <link rel="canonical" href={"https://supernova-financial.com/" + {canonical}} />
+        <link rel="canonical" href={"https://supernova-financial.com/" + canonical} />
       </Head>
 
       <Container sx={{mt: "50px", mb:"100px", }}>
