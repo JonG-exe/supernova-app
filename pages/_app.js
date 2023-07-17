@@ -4,6 +4,8 @@ import Footer from "../components/Footer"
 import "../styles/navigation.css"
 import Link from "next/link"
 import { createTheme, ThemeProvider, Typography } from "@mui/material"
+import Script from "next/script"
+
 
 export default function App({ Component, pageProps }) {
 
@@ -84,6 +86,22 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      {/**Google Tag */}
+      <Script Script async src="https://www.googletagmanager.com/gtag/js?id=G-5H3LNG7BT0"></Script>
+
+      <Script id="google-analytics">
+        {
+          `
+          <!-- Google tag (gtag.js) -->
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-5H3LNG7BT0');
+          `
+        }
+      </Script>
+      
      <ThemeProvider theme={supernovaTheme}>
       
         <Nav />
