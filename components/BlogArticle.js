@@ -17,7 +17,7 @@ const LifeInsurance = ( { Text, title, mainImage, canonical } ) => {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content="" />
         <title>{ title } | Supernova Financial Solutions</title>
         <link rel="canonical" href={"https://supernova-financial.com/" + {canonical}} />

@@ -13,7 +13,7 @@ const BlogIndex = () => {
     <>
 
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="description" content="" />
           <title>Financial Blog | Supernova Financial Solutions</title>
           <link rel="canonical" href="https://supernova-financial.com/plans" />

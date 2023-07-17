@@ -34,8 +34,6 @@ function Copyright(props) {
   );
 }
 
-
-
 // TODO remove, this demo shouldn't need to reset the theme.
 
 const defaultTheme = createTheme();
@@ -66,7 +64,7 @@ export default function SignUp() {
   return (
     <>
       <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="description" content="" />
           <title>Financial Quotes | Supernova Financial Solutions</title>
           <link rel="canonical" href="https://www.supernova-financial.com/quote/" />
@@ -75,6 +73,7 @@ export default function SignUp() {
       <ThemeProvider theme={defaultTheme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
+          
           <Box p="20px">
             <Box
               sx={{

@@ -10,7 +10,7 @@ export default function muiIndex () {
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="description" content="" />
                 <title>Insurance Agency In Trinidad | Supernova Financial Solutions</title>
                 <link rel="canonical" href="https://www.supernova-financial.com/" />
@@ -32,7 +32,7 @@ export default function muiIndex () {
 
 
                                 <Typography variant="body1" sx={{fontSize:{xs: "16px", sm: "22px"}, }} maxWidth="xs">
-                                    Giving you the piece of mind you need to secure you through lifes unpredictable twists and turns, through meticulously personalized financial plans.
+                                    Giving you the piece of mind you need to secure you through life{"'"}s unpredictable twists and turns, through meticulously personalized financial plans.
                                 </Typography>
 
                                 <Stack 
