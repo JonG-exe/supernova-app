@@ -54,7 +54,7 @@ export default function muiPolicies () {
                 id="pension"
                 img={Pension} 
                 title={"Pension"}
-                description={"Most people retire without guaranteed pension benefits after working their entire lives and find themselves deafeated by inflation, as the cost of living rises every year - shrining the purchasing power of the dollar."}
+                description={"Most people retire without guaranteed pension benefits after working their entire lives and find themselves defeated by inflation, as the cost of living rises every year - shrinking the purchasing power of the dollar."}
                 moreInfo={"/blogs/pension"}
             />
 

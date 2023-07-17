@@ -4,7 +4,6 @@ import Image from "next/image"
 import HeroImg from "../public/images/supernova-financial-hero.png"
 import Head from "next/head"
 
-
 export default function muiIndex () {
 
     return (
