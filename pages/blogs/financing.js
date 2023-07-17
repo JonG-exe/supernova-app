@@ -1,8 +1,9 @@
 import {React} from 'react'
-import MainImage from "../../public/images/what-is-life-insurance.jpg"
+import MainImage from "../../public/images/financing-illustration.jpg"
 import "../../styles/blog.css"
 import BlogArticle from "../../components/BlogArticle"
 import Text from "../../blogText/financing"
+
 
 const LifeInsurance = () => {
 

@@ -6,6 +6,7 @@ import Life from "../../public/images/what-is-life-insurance.jpg"
 import MajorMedicalHero from "../../public/images/major-medical-hero.jpg"
 import FinancingHero from "../../public/images/financing-hero.jpg"
 import Retirement from "../../public/images/retirement-on-the-beach.jpg"
+import Financing from "../../public/images/financing-illustration.jpg"
 
 
 const BlogIndex = () => {
@@ -67,7 +68,7 @@ const BlogIndex = () => {
 
                     <BlogLink 
                         href={"/blogs/financing"}
-                        postImage={Retirement}
+                        postImage={Financing}
                         title={"Financing"}
                         description={"The secret to expanding the &lsquo;borders of your habitation&rsquo;, living a bigger, fuller life lies in your ability to access the tools to achieve your objectives.."}
                     />

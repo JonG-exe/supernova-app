@@ -1,7 +1,7 @@
 export default {
     h1: `<h1>Financing</h1>`,
     HTML: `
-    <p>The secret to expanding the &lsquo;borders of your habitation&rsquo;, living a bigger, fuller life lies in your ability to access the tools to achieve your objectives. Access to credit allows you to capitalize or take advantage of:</p>
+    <p>The secret to expanding the 'borders of your habitation', living a bigger, fuller life lies in your ability to access the tools to achieve your objectives. Access to credit allows you to capitalize or take advantage of:</p>
     <ol>
     <li>Owning your dream car, home,</li>
     <li>Starting or expanding a business enterprise,</li>
