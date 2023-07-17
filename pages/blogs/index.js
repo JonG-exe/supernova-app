@@ -17,7 +17,7 @@ const BlogIndex = () => {
           <meta charSet="utf-8" />
           <meta name="description" content="" />
           <title>Insurance and Financing Blog | Supernova Financial Solutions</title>
-          <link rel="canonical" href="https://supernova-financial.com/blogs" />
+          <link rel="canonical" href="https://www.supernova-financial.com/blogs" />
         </Head>
       
         <Box width="100vw" height="100%" minHeight="100vh">
