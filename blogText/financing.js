@@ -1,6 +1,8 @@
 export default {
     h1: `<h1>Financing</h1>`,
     HTML: `
+    <p><i>If you're already familiar with the process, you can <a style="color:blue" href="https://app.banking.maritimefinancial.com/MaGray">skip straight to becoming pre-approved by clicking here</a>.</i></p>
+    <br />
     <p>The secret to expanding the 'borders of your habitation', living a bigger, fuller life lies in your ability to access the tools to achieve your objectives. Access to credit allows you to capitalize or take advantage of:</p>
     <ol>
     <li>Owning your dream car, home,</li>
