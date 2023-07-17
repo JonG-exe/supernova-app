@@ -70,7 +70,7 @@ const BlogIndex = () => {
                         href={"/blogs/financing"}
                         postImage={Financing}
                         title={"Financing"}
-                        description={"The secret to expanding the &lsquo;borders of your habitation&rsquo;, living a bigger, fuller life lies in your ability to access the tools to achieve your objectives.."}
+                        description={"The secret to expanding the 'borders of your habitation', living a bigger, fuller life lies in your ability to access the tools to achieve your objectives.."}
                     />
                     
 
