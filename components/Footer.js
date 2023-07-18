@@ -3,6 +3,8 @@ import { Stack, Paper, Typography, Box } from "@mui/material"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Link from "next/link"
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
   return (
@@ -32,20 +34,32 @@ const Footer = () => {
                     justifyContent={{xs: "space-between", sm: "flex"}}
                     spacing={{ xs: 3 }}
                 >
-                    <Link href="/pension">Pension</Link>
+                    <Typography fontSize="1.25em" color="grey" sx={{textDecoration: "underline"}} textAlign={{xs: "center", sm: "start"}}>Links</Typography>
                     <Link href="/contact">Contact Us</Link>
                     <Link href="/plans">Plans</Link>
                     <Link href="/quote">Quotes</Link>
-                    <Link href="/blog">Blog</Link>
+                    <Link href="/blogs">Blog</Link>
                 </Stack>
 
                 <Stack 
                     ml={{xs: "0px", sm: "10px"}} 
                     textAlign={{xs: "center", sm: "start"}}
+                    spacing={"24px"}
                 >
-                    <Typography variant="paragraph">Tel. 769-4505</Typography>
+                    <Typography fontSize="1.25em" color="grey" sx={{textDecoration: "underline"}} textAlign={{xs: "center", sm: "start"}}>Contact Info.</Typography>
 
-                    <Typography variant="paragraph">e-mail: magray@maritimefinancial.com</Typography>
+                    <Stack direction="row" justifyContent={{xs: "center", sm: "flex-start"}}>
+                        <LocalPhoneIcon sx={{marginRight: "15px"}}/>
+                        <Typography variant="paragraph">Tel. 769-4505</Typography>
+                    </Stack>
+
+                    <Stack direction={{xs: "column", sm: "row"}} alignItems={{xs: "center", sm: "flex-start"}} justifyContent={"center"}>
+                        <Typography minWidth="max-content" variant="paragraph" display="flex" alignItems="center" >
+                            <EmailIcon sx={{marginRight: "15px"}}/>e-mail: 
+                        </Typography>
+                        <Typography variant="paragraph" ml="10px">magray@maritimefinancial.com</Typography>
+                    </Stack>
+                        
                 </Stack>
                 
             </Stack>

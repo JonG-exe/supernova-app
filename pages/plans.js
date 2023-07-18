@@ -63,7 +63,7 @@ export default function muiPolicies () {
                 img={InvestmentsIcon} 
                 title={"Financing"}
                 description={"The secret to expanding the ‘borders of your habitation’, living a bigger, fuller life is your ability to access the tools to achieve your objectives. Access to credit allows you to capitalize or take advantage of..."}
-                moreInfo={"/blogs/triflex-life-insurance-investment"}
+                moreInfo={"/blogs/financing"}
             />
 
             {/* <Plan 
