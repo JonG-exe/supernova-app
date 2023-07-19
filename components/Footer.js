@@ -32,10 +32,10 @@ const Footer = () => {
                     mt={{xs: "30px", sm: "0"}}
                     ml={{xs: "0px", sm: "10px"}} 
                     textAlign={{xs: "center", sm: "start"}}
-                    justifyContent={{xs: "space-between", sm: "flex"}}
                     spacing={{ xs: 3 }}
                 >
-                    <Typography fontSize="1.25em" color="grey" sx={{textDecoration: "underline"}} textAlign={{xs: "center", sm: "start"}}>Links</Typography>
+                    <Typography fontSize="1.25em" color="#2deb23" sx={{textDecoration: "underline"}} textAlign={{xs: "center", sm: "start"}}>Links</Typography>
+
                     <Link href="/contact">Contact Us</Link>
                     <Link href="/plans">Plans</Link>
                     <Link href="/quote">Quotes</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                     textAlign={{xs: "center", sm: "start"}}
                     spacing={"24px"}
                 >
-                    <Typography fontSize="1.25em" color="grey" sx={{textDecoration: "underline"}} textAlign={{xs: "center", sm: "start"}}>Contact Info.</Typography>
+                    <Typography fontSize="1.25em" color="#2deb23" sx={{textDecoration: "underline"}} textAlign={{xs: "center", sm: "start"}}>Contact Info.</Typography>
 
                     <Stack direction="row" justifyContent={{xs: "center", sm: "flex-start"}}>
                         <LocalPhoneIcon sx={{marginRight: "15px"}}/>
@@ -63,9 +63,9 @@ const Footer = () => {
 
                     <Stack direction={{xs: "column", sm: "row"}} alignItems={{xs: "center", sm: "flex-start"}} justifyContent={"center"}>
                         <Typography minWidth="max-content" variant="paragraph" display="flex" alignItems="center" >
-                            <BusinessIcon sx={{marginRight: "15px", fontSize: "1.75em"}}/>Address: 
+                            <BusinessIcon sx={{marginRight: "15px", fontSize: "1.75em"}}/>Office Address: 
                         </Typography>
-                        <Typography maxWidth="300px" alignSelf="center" variant="paragraph" ml="10px">Ground floor Maritime Centre, 29 Tenth St, Barataria, Trinidad and Tobago, W.I. <br /> <br />
+                        <Typography maxWidth="250px" alignSelf="center" variant="paragraph" ml="10px">Ground floor Maritime Centre, 29 Tenth St, Barataria, Trinidad and Tobago, W.I. <br /> <br />
                         Ofc phone: 868-607-MARI Ext 2280
                         </Typography>
                         

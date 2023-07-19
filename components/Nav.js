@@ -55,7 +55,7 @@ export default function Nav () {
 
           <Stack direction={"row"} display={{ xs: "none", sm: "flex",}}>
 
-            <Link href="https://wa.me/18687667824">
+            <Link href="https://wa.me/18687667824" target="_blank">
               <Stack alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
                 <WhatsAppIcon sx={{fontSize: "35px", mb: "2px"}}  />
                 <span>WhatsApp</span>
@@ -126,7 +126,7 @@ export default function Nav () {
                   </Stack>
                 </Link>
 
-                <Link href="/https://wa.me/18687667824">
+                <Link href="https://wa.me/18687667824" target="_blank">
                   <Stack direction="row" spacing={4} alignItems="center" color="black">
                     <WhatsAppIcon sx={{
                       fontSize: "3em", 
