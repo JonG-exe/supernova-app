@@ -17,6 +17,7 @@ const BlogIndex = () => {
           <meta charSet="utf-8" />
           <meta name="description" content="Discover how strategic financial planning and robust insurance coverage can pave the way to a secure future by diving into our insightful and curated blog." />
           <title>Insurance and Financing Blog | Supernova Financial Solutions</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="canonical" href="https://www.supernova-financial.com/blogs" />
         </Head>
       

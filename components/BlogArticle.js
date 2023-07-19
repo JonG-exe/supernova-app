@@ -19,6 +19,7 @@ const LifeInsurance = ( { Text, title, description, mainImage, canonical } ) => 
       <Head>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{ title } | Supernova Financial Solutions</title>
         <link rel="canonical" href={"https://www.supernova-financial.com/blogs" + canonical} />
       </Head>

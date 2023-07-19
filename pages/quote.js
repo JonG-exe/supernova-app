@@ -44,6 +44,7 @@ export default function SignUp() {
       <Head>
           <meta charSet="utf-8" />
           <meta name="description" content="Get near-instant pre-approval for your financial and insurance needs in Trinidad. Secure your future with ease on our platform. Get a quote today." />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Insurance & Financial Quotes | Supernova Financial Solutions</title>
           <link rel="canonical" href="https://www.supernova-financial.com/quote" />
       </Head>

@@ -12,6 +12,7 @@ export default function SignUp() {
       <Head>
           <meta charSet="utf-8" />
           <meta name="description" content="Get in touch with Supernova Financial for details on all your financial and insurance needs." />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Contact Supernova Financial | Supernova Financial Solutions</title>
           <link rel="canonical" href="https://www.supernova-financial.com/contact" />
       </Head>

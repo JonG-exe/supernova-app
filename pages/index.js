@@ -11,6 +11,7 @@ export default function muiIndex () {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Protect your future with Trinidad's leading insurance firm. Discover tailored insurance solutions and quotes for life, health, auto, and home insurance. " />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>20+ Years Leading Insurance Agency In Trinidad | Supernova Financial Solutions</title>
                 <link rel="canonical" href="https://www.supernova-financial.com/" />
             </Head>

@@ -18,6 +18,7 @@ export default function muiPolicies () {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Secure your future with 20+ years of insurance expertise in Trinidad. With life, health, auto, home insurance, and financial plans available." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Insurance & Financial Plans | Supernova Financial Solutions</title>
                 <link rel="canonical" href="https://www.supernova-financial.com/plans" />
             </Head>
