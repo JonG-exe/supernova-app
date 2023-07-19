@@ -11,7 +11,6 @@ const Footer = () => {
     <>
         <Stack 
             sx={{
-                
                 width:"100vw", 
                 alignItems:"center",
                 justifyContent:"center",
