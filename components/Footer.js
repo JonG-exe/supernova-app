@@ -5,6 +5,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import Link from "next/link"
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
+import BusinessIcon from '@mui/icons-material/Business';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
   return (
@@ -52,11 +54,21 @@ const Footer = () => {
                         <Typography variant="paragraph">Tel. 769-4505</Typography>
                     </Stack>
 
-                    <Stack direction={{xs: "column", sm: "row"}} alignItems={{xs: "center", sm: "flex-start"}} justifyContent={"center"}>
+                    <Stack direction={{xs: "column", sm: "row"}} alignItems={{xs: "center", sm: "flex-start"}} justifyContent={{xs: "center", sm: "flex-start"}}>
                         <Typography minWidth="max-content" variant="paragraph" display="flex" alignItems="center" >
                             <EmailIcon sx={{marginRight: "15px"}}/>e-mail: 
                         </Typography>
                         <Typography variant="paragraph" ml="10px">magray@maritimefinancial.com</Typography>
+                    </Stack>
+
+                    <Stack direction={{xs: "column", sm: "row"}} alignItems={{xs: "center", sm: "flex-start"}} justifyContent={"center"}>
+                        <Typography minWidth="max-content" variant="paragraph" display="flex" alignItems="center" >
+                            <BusinessIcon sx={{marginRight: "15px", fontSize: "1.75em"}}/>Address: 
+                        </Typography>
+                        <Typography maxWidth="300px" alignSelf="center" variant="paragraph" ml="10px">Ground floor Maritime Centre, 29 Tenth St, Barataria, Trinidad and Tobago, W.I. <br /> <br />
+                        Ofc phone: 868-607-MARI Ext 2280
+                        </Typography>
+                        
                     </Stack>
                         
                 </Stack>
@@ -73,7 +85,23 @@ const Footer = () => {
                 marginTop="30px"
                 spacing={5}
             >
-                <Link href="https://www.facebook.com/profile.php?id=100085664509656" target="_blank">
+
+                <Link title="WhatsApp" href="https://wa.me/18687667824" target="_blank">
+                    <Box
+                        width="50px" 
+                        height="50px" 
+                        border="2px solid white" 
+                        borderRadius="50%" 
+                        padding="10px"
+                        display="flex"
+                        justifyContent={"center"}
+                        alignItems="center"
+                    >
+                            <WhatsAppIcon />
+                    </Box>
+                </Link>
+
+                <Link href="https://www.facebook.com/profile.php?id=100085664509656" target="_blank" title="Facebook">
                     <Box 
                         width="50px" 
                         height="50px" 
@@ -89,7 +117,7 @@ const Footer = () => {
                 </Link>
 
 
-                <Link href="https://www.instagram.com/supernova_financial/" target="_blank">
+                <Link href="https://www.instagram.com/supernova_financial/" target="_blank" title="Instagram">
                     <Box
                         width="50px" 
                         height="50px" 
@@ -103,7 +131,6 @@ const Footer = () => {
                             <InstagramIcon />
                     </Box>
                 </Link>
-
 
             </Stack>
         </Stack>

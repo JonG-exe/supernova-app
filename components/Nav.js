@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Logo from "../public/images/supernova-financial-logo.png" 
 import { Modal, Typography, Button, AppBar, Toolbar, Box, Stack } from "@mui/material"
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import ModalItem from "./ModalItem"
 
 // Icons
@@ -53,6 +54,13 @@ export default function Nav () {
 
 
           <Stack direction={"row"} display={{ xs: "none", sm: "flex",}}>
+
+            <Link href="https://wa.me/18687667824">
+              <Stack alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
+                <WhatsAppIcon sx={{fontSize: "35px", mb: "2px"}}  />
+                <span>WhatsApp</span>
+              </Stack>
+            </Link>
 
             <Link href="/plans">
               <Stack alignItems="center" justifyContent={"center"} sx={{ marginRight:"50px",}}>
@@ -115,6 +123,16 @@ export default function Nav () {
                       color: "black"}}
                     />
                       <Typography variant="h5">Home</Typography>
+                  </Stack>
+                </Link>
+
+                <Link href="/https://wa.me/18687667824">
+                  <Stack direction="row" spacing={4} alignItems="center" color="black">
+                    <WhatsAppIcon sx={{
+                      fontSize: "3em", 
+                      color: "black"}}
+                    />
+                    <Typography variant="h5">WhatsApp</Typography>
                   </Stack>
                 </Link>
 
